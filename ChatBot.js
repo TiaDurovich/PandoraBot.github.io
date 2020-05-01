@@ -80,7 +80,8 @@ const possibleYesUserInputs = [
     'Yas',
     'yas',
     'Yo',
-    'yo'
+    'yo',
+    'yeha'
 ]
 
 
