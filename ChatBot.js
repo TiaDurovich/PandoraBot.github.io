@@ -9,7 +9,7 @@ document.getElementById("userInput")
     event.preventDefault();
     if (event.keyCode === 13) {
         document.getElementById("submit").click();
-        
+
     }
 });
 
@@ -81,8 +81,7 @@ const possibleYesUserInputs = [
     'Yas',
     'yas',
     'Yo',
-    'yo',
-    'yeha'
+    'yo'
 ]
 
 
