@@ -9,8 +9,13 @@ document.getElementById("userInput")
     event.preventDefault();
     if (event.keyCode === 13) {
         document.getElementById("submit").click();
+        userInput.value=userInput.defaultValue;
     }
 });
+
+
+submit.addEventListener("click", response);
+
 
 /* Welcome Question on Load */
 
@@ -26,9 +31,6 @@ window.onload = function response() {
     botChat.textContent = welcomeQuestion[randomNumber];
 }
 
-
-submit.addEventListener("click", response);
-submit.addEventListener("click", "keyup", response(userInput=null));
 
 
 
