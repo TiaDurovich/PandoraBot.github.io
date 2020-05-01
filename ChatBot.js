@@ -13,8 +13,6 @@ document.getElementById("userInput")
 });
 
 
-submit.addEventListener("click", response);
-
 
 /* Welcome Question on Load */
 
@@ -30,7 +28,7 @@ window.onload = function response() {
     botChat.textContent = welcomeQuestion[randomNumber];
 }
 
-
+submit.addEventListener("click", response);
 
 
 const welcomeResponse = [
