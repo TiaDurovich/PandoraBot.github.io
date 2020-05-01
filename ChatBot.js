@@ -9,7 +9,7 @@ document.getElementById("userInput")
     event.preventDefault();
     if (event.keyCode === 13) {
         document.getElementById("submit").click();
-        document.getElementById("userInput")=null;
+        userInput=null;
     }
 });
 
