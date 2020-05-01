@@ -9,6 +9,7 @@ document.getElementById("userInput")
     event.preventDefault();
     if (event.keyCode === 13) {
         document.getElementById("submit").click();
+        document.getElementById("userInput")=null;
     }
 });
 
@@ -28,8 +29,6 @@ window.onload = function response() {
 
 
 submit.addEventListener("click", response);
-
-submit.addEventListener("click", "keyup", response=null);
 
 
 
