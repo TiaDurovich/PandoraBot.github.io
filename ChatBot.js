@@ -9,7 +9,7 @@ document.getElementById("userInput")
     event.preventDefault();
     if (event.keyCode === 13) {
         document.getElementById("submit").click();
-    
+        document.getElementById("userInput").value= "";
     }
 });
 
@@ -31,7 +31,6 @@ window.onload = function response() {
 
 submit.addEventListener("click", response);
 
-submit.addEventListener(onkeyup.userInput=null);
 
 const welcomeResponse = [
     ', did you know that there may be life on Mars!?',
