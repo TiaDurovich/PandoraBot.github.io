@@ -9,8 +9,8 @@ document.getElementById("userInput")
     event.preventDefault();
     if (event.keyCode === 13) {
         document.getElementById("submit").click();
-        submit.value = null
     }
+    submit.value = null
 });
 
 /* Welcome Question on Load */
