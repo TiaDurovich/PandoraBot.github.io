@@ -78,7 +78,9 @@ const possibleYesUserInputs = [
     'Sure did',
     'sure did',
     'Yas',
-    'yas'
+    'yas',
+    'Yo',
+    'yo'
 ]
 
 
