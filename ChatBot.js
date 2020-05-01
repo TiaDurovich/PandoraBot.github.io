@@ -53,7 +53,7 @@ const didYouKnowResponseYes = [
 ]
 
 const didYouKnowResponseNo = [
-    'That\'s great! You have lot\'s to learn',
+    'That\'s great! You have a lot to learn',
     'You didn\'t? Well, you have a lot to learn!',
     'Well, I have a lot more for you to learn :)',
     'That\'s okay. Just keep learning!',
@@ -93,7 +93,7 @@ function response() {
         user.textContent = userInput.value; 
     }
     
-    if(userInput.value == "Yes") {
+    if(userInput.value == "Y") {
         botChat.textContent = didYouKnowResponseYes[randomNumber]
     }
     if(userInput.value == "No") {
