@@ -9,7 +9,6 @@ document.getElementById("userInput")
     event.preventDefault();
     if (event.keyCode === 13) {
         document.getElementById("submit").click();
-        userInput.value=userInput.null;
     }
 });
 
@@ -29,6 +28,7 @@ const welcomeQuestion = [
 window.onload = function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
     botChat.textContent = welcomeQuestion[randomNumber];
+    userInput.value=null;
 }
 
 
