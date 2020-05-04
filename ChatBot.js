@@ -28,7 +28,7 @@ window.onload = function response() {
     botChat.textContent = welcomeQuestion[randomNumber];
 }
 
-submit.addEventListener("click", response)userInput.textContent=null;
+submit.addEventListener("click", response);
 
 const welcomeResponse = [
     ', did you know that there may be life on Mars!?',
@@ -90,14 +90,17 @@ const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 function response() {
     for (index = 0; index < welcomeQuestion.length; index++) {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
-        user.textContent = userInput.value; 
+        user.textContent = userInput.value;
+        userInput.textContent=null; 
     }
     
     if(userInput.value == "Yes") {
         botChat.textContent = didYouKnowResponseYes[randomNumber]
+        userInput.textContent=null;
     }
     if(userInput.value == "No") {
         botChat.textContent = didYouKnowResponseNo[randomNumber]
+        userInput.textContent=null;
     }
 }
 
