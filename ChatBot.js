@@ -91,16 +91,14 @@ function response() {
     for (index = 0; index < welcomeQuestion.length; index++) {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value;
-        userInput.textContent=null; 
     }
-    
-    if(userInput.value == "Yes") {
+
+    if (index = 0; index < possibleYesUserInputs.length; index++) {
         botChat.textContent = didYouKnowResponseYes[randomNumber]
-        userInput.textContent=null;
     }
     if(userInput.value == "No") {
         botChat.textContent = didYouKnowResponseNo[randomNumber]
-        userInput.textContent=null;
+        
     }
 }
 
