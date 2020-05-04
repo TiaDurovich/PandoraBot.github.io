@@ -92,7 +92,7 @@ function response() {
     for (index = 0; index < welcomeQuestion.length; index++) {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value; 
-        document.getElementById('userInput').value=null;
+        document.getElementById('userInput')textContent.value=null;
     }
     
     if(userInput.value == "Yes") {
