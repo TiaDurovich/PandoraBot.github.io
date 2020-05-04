@@ -10,9 +10,6 @@ document.getElementById("userInput")
     if (event.keyCode === 13) {
         document.getElementById("submit").click();
     }
-    if (event.keyCode === 13) {
-        document.getElementById("userInput").reset();
-    }
 });
 
 
@@ -95,6 +92,7 @@ function response() {
     for (index = 0; index < welcomeQuestion.length; index++) {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value; 
+        userInput.textContent=reset.value;
     }
     
     if(userInput.value == "Yes") {
