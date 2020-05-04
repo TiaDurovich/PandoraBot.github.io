@@ -29,7 +29,11 @@ window.onload = function response() {
 }
 
 submit.addEventListener("click", response);
-function reset() { document.getElementById("userInput").value = "";}
+document.getElementById('userInput')
+    .addEventListener("keyup", "click", function(event) {
+        event.preventDefault();
+        document.getElementById("userInput").value=null;
+    })
 
 const welcomeResponse = [
     ', did you know that there may be life on Mars!?',
@@ -92,7 +96,6 @@ function response() {
     for (index = 0; index < welcomeQuestion.length; index++) {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value; 
-        document.getElementById('userInput')textContent.value=null;
     }
     
     if(userInput.value == "Yes") {
