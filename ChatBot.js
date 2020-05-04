@@ -28,12 +28,7 @@ window.onload = function response() {
     botChat.textContent = welcomeQuestion[randomNumber];
 }
 
-submit.addEventListener("click", response);
-document.getElementById('userInput')
-    .addEventListener("keyup", "click", function(event) {
-        event.preventDefault();
-        document.getElementById("userInput").value=null;
-    })
+submit.addEventListener("click", response)userInput.textContent=null;
 
 const welcomeResponse = [
     ', did you know that there may be life on Mars!?',
