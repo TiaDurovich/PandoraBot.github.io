@@ -86,13 +86,12 @@ const possibleYesUserInputs = [
 const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
 
-
 function response() {
     for (index = 0; index < welcomeQuestion.length; index++) {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value;
     }
-    if(userInput.value == "Yes") {
+    if(userInput.value == possibleYesUserInputs.length) {
         botChat.textContent = didYouKnowResponseYes[randomNumber]
     }
     if(userInput.value == "No") {
