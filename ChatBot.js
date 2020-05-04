@@ -93,7 +93,7 @@ function response() {
         user.textContent = userInput.value;
     }
 
-    if (index = 0; index < possibleYesUserInputs.length; index++) {
+    if(userInput.value == possibleYesUserInputs.length) {
         botChat.textContent = didYouKnowResponseYes[randomNumber]
     }
     if(userInput.value == "No") {
