@@ -13,7 +13,6 @@ document.getElementById("userInput")
 });
 
 
-
 /* Welcome Question on Load */
 
 const welcomeQuestion = [
@@ -29,6 +28,9 @@ window.onload = function response() {
 }
 
 submit.addEventListener("click", response);
+
+function reset() {  document.getElementById("userInput").value="";}
+Element.click = reset;
 
 const welcomeResponse = [
     ', did you know that there may be life on Mars!?',
