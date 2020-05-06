@@ -90,8 +90,64 @@ function response() {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value;
     }
-
     if(userInput.value == "Yes") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "yes") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "Yeah") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "yeah") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "Ya") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "ya") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "Y") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "y") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "Yes I did") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "Yes, I did") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "yes i did") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "Yes i did") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "Yup") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "yup") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "Sure did") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "sure did") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "Yas") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "yas") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "Yo") { 
+        botChat.textContent = didYouKnowResponseYes[randomYesResponse]
+    }
+    if(userInput.value == "yo") { 
         botChat.textContent = didYouKnowResponseYes[randomYesResponse]
     }
     if(userInput.value == "No") {
