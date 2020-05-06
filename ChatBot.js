@@ -29,7 +29,7 @@ window.onload = function response() {
 
 submit.addEventListener("click", response);
 
-function reset() {  document.getElementById("userInput").value="";}
+function reset() {  document.getElementById("userInput").value=null;}
 Element.onclick = reset;
 
 const welcomeResponse = [
