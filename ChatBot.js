@@ -150,9 +150,42 @@ function response() {
     if(userInput.value == "yo") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber]
     }
+   
     if(userInput.value == "No") {
         botChat.textContent = didYouKnowResponseNo[randomNumber]
-        
+    }
+    if(userInput.value == "no") {
+        botChat.textContent = didYouKnowResponseNo[randomNumber]
+    }
+    if(userInput.value == "Nah") {
+        botChat.textContent = didYouKnowResponseNo[randomNumber]
+    }
+    if(userInput.value == "nah") {
+        botChat.textContent = didYouKnowResponseNo[randomNumber]
+    }
+    if(userInput.value == "Nope") {
+        botChat.textContent = didYouKnowResponseNo[randomNumber]
+    }
+    if(userInput.value == "nope") {
+        botChat.textContent = didYouKnowResponseNo[randomNumber]
+    }
+    if(userInput.value == "No I did not") {
+        botChat.textContent = didYouKnowResponseNo[randomNumber]
+    }
+    if(userInput.value == "no i did not") {
+        botChat.textContent = didYouKnowResponseNo[randomNumber]
+    }
+    if(userInput.value == "No I didn't") {
+        botChat.textContent = didYouKnowResponseNo[randomNumber]
+    }
+    if(userInput.value == "No I didnt") {
+        botChat.textContent = didYouKnowResponseNo[randomNumber]
+    }
+    if(userInput.value == "N") {
+        botChat.textContent = didYouKnowResponseNo[randomNumber]
+    }
+    if(userInput.value == "n") {
+        botChat.textContent = didYouKnowResponseNo[randomNumber]
     }
 }
 
