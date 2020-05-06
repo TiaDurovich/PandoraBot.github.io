@@ -30,7 +30,7 @@ window.onload = function response() {
 submit.addEventListener("click", response);
 
 function reset() {  document.getElementById("userInput").value="";}
-Element.click = reset;
+Element.onclick = reset;
 
 const welcomeResponse = [
     ', did you know that there may be life on Mars!?',
