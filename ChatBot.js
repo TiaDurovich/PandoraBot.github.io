@@ -4,6 +4,16 @@ const botChat = document.querySelector("#botChat");
 const user = document.querySelector("#user");
 
 
+document.getElementById("userInput")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("submit").click();
+    }
+});
+
+
+
 /* Welcome Question on Load */
 
 const welcomeQuestion = [
@@ -18,20 +28,7 @@ window.onload = function response() {
     botChat.textContent = welcomeQuestion[randomNumber];
 }
 
-
-
-document.getElementById("userInput")
-    .addEventListener("keyup", function(event) {
-    event.preventDefault();
-    if (event.keyCode === 13) {
-        document.getElementById("submit").click();
-    }
-});
-
 submit.addEventListener("click", response);
-
-
-
 
 const welcomeResponse = [
     ', did you know that there may be life on Mars!?',
