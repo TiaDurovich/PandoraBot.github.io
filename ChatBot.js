@@ -189,7 +189,7 @@ function response() {
     if(userInput.value == "n") {
         botChat.textContent = didYouKnowResponseNo[randomNumber]
     }
-    if(userInput.value == null) {
+    if(userInput.value == "") {
         botChat.textContent = "Try typing Yes or No :)"
     }
 }
