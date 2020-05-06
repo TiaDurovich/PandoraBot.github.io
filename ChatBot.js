@@ -9,6 +9,7 @@ document.getElementById("userInput")
     event.preventDefault();
     if (event.keyCode === 13) {
         document.getElementById("submit").click();
+        document.getElementById("userInput").value="";
     }
 });
 
@@ -57,31 +58,6 @@ const didYouKnowResponseNo = [
     'That\'s okay. Just keep learning!',
     'Great! You\'ve learnt something new today'
 ]
-
-
-const possibleYesUserInputs = [
-    'Yes',
-    'yes',
-    'Yeah',
-    'yeah',
-    'ya',
-    'Ya',
-    'Y',
-    'y',
-    'Yes I did',
-    'Yes i did',
-    'Yes, I did',
-    'yes i did',
-    'Yup',
-    'yup',
-    'Sure did',
-    'sure did',
-    'Yas',
-    'yas',
-    'Yo',
-    'yo'
-]
-
 
 const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
