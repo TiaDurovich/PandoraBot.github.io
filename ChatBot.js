@@ -150,7 +150,6 @@ function response() {
     if(userInput.value == "yo") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber]
     }
-   
     if(userInput.value == "No") {
         botChat.textContent = didYouKnowResponseNo[randomNumber]
     }
