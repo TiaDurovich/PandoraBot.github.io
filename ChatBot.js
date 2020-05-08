@@ -170,8 +170,12 @@ function response() {
     else {
         botChat.textContent = "Why don't you try responding with Yes or No? :)"
     }
-}
 
+        while(botChat.textContent = didYouKnowResponseYes, didYouKnowResponseNo, "Try typing Yes or No :)", "Why don't you try responding with Yes or No? :)")
+            setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you could see in the night sky?"}, 2000)
+        }
+
+        
 
 
 
