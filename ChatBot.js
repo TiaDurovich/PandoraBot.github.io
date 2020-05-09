@@ -67,135 +67,135 @@ function response() {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value;
     }
-    if (userInput.value == "Yes") {
+    while(userInput.value == "Yes") {
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "yes") { 
+    while(userInput.value == "yes") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "Yeah") { 
+    while(userInput.value == "Yeah") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "yeah") { 
+    while(userInput.value == "yeah") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "Ya") { 
+    while(userInput.value == "Ya") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "ya") { 
+    while(userInput.value == "ya") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "Y") { 
+    while(userInput.value == "Y") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "y") { 
+    while(userInput.value == "y") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "Yes I did") { 
+    while(userInput.value == "Yes I did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "Yes, I did") { 
+    while(userInput.value == "Yes, I did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "yes i did") { 
+    while(userInput.value == "yes i did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "Yes i did") { 
+    while(userInput.value == "Yes i did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "Yup") { 
+    while(userInput.value == "Yup") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "yup") { 
+    while(userInput.value == "yup") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "Sure did") { 
+    while(userInput.value == "Sure did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "sure did") { 
+    while(userInput.value == "sure did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "Yas") { 
+    while(userInput.value == "Yas") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "yas") { 
+    while(userInput.value == "yas") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "Yo") { 
+    while(userInput.value == "Yo") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "yo") { 
+    while(userInput.value == "yo") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "No") {
+    while(userInput.value == "No") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "no") {
+    while(userInput.value == "no") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "Nah") {
+    while(userInput.value == "Nah") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "nah") {
+    while(userInput.value == "nah") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "Nope") {
+    while(userInput.value == "Nope") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "nope") {
+    while(userInput.value == "nope") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "No I did not") {
+    while(userInput.value == "No I did not") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "no i did not") {
+    while(userInput.value == "no i did not") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "No I didn't") {
+    while(userInput.value == "No I didn't") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "No I didnt") {
+    while(userInput.value == "No I didnt") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "N") {
+    while(userInput.value == "N") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "n") {
+    while(userInput.value == "n") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
-    if(userInput.value == "") {
+    while(userInput.value == "") {
         botChat.textContent = "Try typing Yes or No :)";
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
