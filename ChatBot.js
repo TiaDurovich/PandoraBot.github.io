@@ -170,8 +170,6 @@ function response() {
         botChat.textContent == "How about trying to type Yes or No :)";
     }
 
-    { break; }
-
         if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
             setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
@@ -184,9 +182,7 @@ function response() {
                 setTimeout(() => {botChat.textContent = "What country are you in... or even better, what hemisphere are you located within?"}, 2000)
             }
         }
-    
-    { continue; }
-}
+    }
 
 
     
