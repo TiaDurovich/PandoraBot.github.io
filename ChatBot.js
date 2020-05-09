@@ -71,8 +71,8 @@ function response() {
 
     }
     if(userInput.value == "Yes") { 
-        botChat.textContent = didYouKnowResponseYes[randomNumber]
         const didYouKnowResponseYes = false;
+        botChat.textContent = didYouKnowResponseYes[randomNumber]
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3500)
     }
     if(userInput.value == "yes") { 
