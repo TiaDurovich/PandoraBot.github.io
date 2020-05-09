@@ -69,139 +69,139 @@ function response() {
     }
     if (userInput.value == "Yes") {
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "yes") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "Yeah") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "yeah") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "Ya") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "ya") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "Y") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "y") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "Yes I did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "Yes, I did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "yes i did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "Yes i did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "Yup") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "yup") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "Sure did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "sure did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "Yas") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "yas") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "Yo") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "yo") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "No") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "no") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "Nah") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "nah") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "Nope") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "nope") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "No I did not") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "no i did not") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "No I didn't") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "No I didnt") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "N") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "n") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     if(userInput.value == "") {
         botChat.textContent = "Try typing Yes or No :)";
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
     else {
         botChat.textContent == "How about trying to type Yes or No :)";
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 2500)
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
 
 
