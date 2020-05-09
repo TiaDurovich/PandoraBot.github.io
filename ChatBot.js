@@ -204,10 +204,10 @@ function response() {
     }
 
     if (botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
-        while (userInput.value == "Yes") {
-            botChat.textContent = "Awesome! I need to know what country you are in... or even better, tell me what hemisphere you are located within! North or South?";
+            botChat.textContent = "Awesome! I need to know what country you are in... or even better, tell me what hemisphere you are located within! North or South?" {
+                while userInput.textContent = "Yes"
+            }
         }
-    }
 }
 
 
