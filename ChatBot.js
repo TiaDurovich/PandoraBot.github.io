@@ -182,6 +182,8 @@ function response() {
                 setTimeout(() => {botChat.textContent = "What country are you in... or even better, what hemisphere are you located within?"}, 2000)
             }
         }
+    
+    { continue; }
 }
 
 
