@@ -177,6 +177,7 @@ function response() {
             setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
         while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
+            didYouKnowResponseYes == null
             if (userInput.value == "Yes") {
                 botChat.textContent = "Awesome! First of all I need to know your rough location"
                 setTimeout(() => {botChat.textContent = "What country are you in... or even better, what hemisphere are you located within?"}, 2000)
