@@ -67,7 +67,7 @@ function response() {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value;
     }
-    if(userInput.value == "Yes") { 
+    if (userInput.value == "Yes") {
         botChat.textContent = didYouKnowResponseYes[randomNumber]
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3500)
     }
