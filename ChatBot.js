@@ -60,6 +60,8 @@ const didYouKnowResponseNo = [
 
 const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
+const didYouKnowResponseYes = false;
+
 /* ChatBot Welcome Question & Response */
 
 function response() {
@@ -70,6 +72,7 @@ function response() {
     }
     if(userInput.value == "Yes") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber]
+        const didYouKnowResponseYes = true;
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3500)
     }
     if(userInput.value == "yes") { 
@@ -203,15 +206,14 @@ function response() {
     else {
         botChat.textContent == "How about trying to type Yes or No :)"
     }
-}
 
-function response() {
     while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
         if (userInput.value == "Yes") {
             botChat.textContent = "Awesome! I need to know what country you are in... or even better, tell me what hemisphere you are located within! North or South?";
         }
     }
 }
+
 
 
     
