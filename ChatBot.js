@@ -173,7 +173,6 @@ function response() {
 
     if (botChat.textContent == didYouKnowResponseYes) {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
-
     }
 }
 
