@@ -66,11 +66,11 @@ function response() {
     for (index = 0; index < welcomeQuestion.length; index++) {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value;
+        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you ca see in the night sky?"}, 2000)
 
     }
     if(userInput.value == "Yes") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber]
-        setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you ca see in the night sky?"}, 2000)
     }
     if(userInput.value == "yes") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber]
