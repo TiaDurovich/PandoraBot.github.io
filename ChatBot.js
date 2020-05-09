@@ -67,7 +67,7 @@ function response() {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value;
     }
-    if (userInput.nodeValue == "Yes") {
+    if (userInput.value == "Yes") {
         botChat.textContent = didYouKnowResponseYes[randomNumber]
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3500)
     }
@@ -204,7 +204,7 @@ function response() {
     }
 
     while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
-        if (userInput.value == "Yes") {
+        for (userInput.value == "Yes") {
             botChat.textContent = "Awesome! I need to know what country you are in... or even better, tell me what hemisphere you are located within! North or South?";
         }
     }
