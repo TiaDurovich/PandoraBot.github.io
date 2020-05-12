@@ -47,7 +47,8 @@ const didYouKnowResponseYes = [
     'Great! You already know something about space!',
     'Nice going!',
     'Virtual high-five space buddy!',
-    'That\'s awesome :)'
+    'That\'s awesome :)',
+    'Good on ya!'
 ]
 
 const didYouKnowResponseNo = [
@@ -55,7 +56,8 @@ const didYouKnowResponseNo = [
     'You didn\'t? Well, you have a lot to learn!',
     'Well, I have a lot more for you to learn :)',
     'That\'s okay. Just keep learning!',
-    'Great! You\'ve learnt something new today'
+    'Great! You\'ve learnt something new today',
+    'That\'s alright! You can\'t know everthing :)'
 ]
 
 const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
@@ -127,6 +129,24 @@ function response() {
     if(userInput.value == "yo") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
     }
+    if(userInput.value == "Yep") { 
+        botChat.textContent = didYouKnowResponseYes[randomNumber];
+    }
+    if(userInput.value == "yep") { 
+        botChat.textContent = didYouKnowResponseYes[randomNumber];
+    }
+    if(userInput.value == "Yaaa") { 
+        botChat.textContent = didYouKnowResponseYes[randomNumber];
+    }
+    if(userInput.value == "yaa") { 
+        botChat.textContent = didYouKnowResponseYes[randomNumber];
+    }
+    if(userInput.value == "You bet") { 
+        botChat.textContent = didYouKnowResponseYes[randomNumber];
+    }
+    if(userInput.value == "you bet") { 
+        botChat.textContent = didYouKnowResponseYes[randomNumber];
+    }
     if(userInput.value == "No") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
     }
@@ -177,7 +197,6 @@ function response() {
             setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
         while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
-            didYouKnowResponseYes == null
             if (userInput.value == "Yes") {
                 botChat.textContent = "Awesome! First of all I need to know your rough location"
                 setTimeout(() => {botChat.textContent = "What country are you in... or even better, what hemisphere are you located within?"}, 2000)
