@@ -147,6 +147,12 @@ function response() {
     if(userInput.value == "you bet") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
     }
+    if(userInput.value == "Yeh") { 
+        botChat.textContent = didYouKnowResponseYes[randomNumber];
+    }
+    if(userInput.value == "yeh") { 
+        botChat.textContent = didYouKnowResponseYes[randomNumber];
+    }
     if(userInput.value == "No") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
     }
