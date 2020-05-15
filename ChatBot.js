@@ -192,7 +192,7 @@ function response() {
     if(userInput.value == "") {
         botChat.textContent = "Try typing Yes or No :)";
     } else {
-        botChat.textContent == "How about trying to type Yes or No :)";
+        botChat.textContent = "How about trying to type Yes or No :)";
     }
 
         if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
