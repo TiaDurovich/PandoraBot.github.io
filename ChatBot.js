@@ -193,10 +193,7 @@ function response() {
     if(userInput.value == "") {
         botChat.textContent = "Try typing Yes or No :)";
     } 
-    if(userInput.value == null) {
-        botChat.textContent = "How about trying to type Yes or No :)";
-    }
-
+   
         if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
             setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
