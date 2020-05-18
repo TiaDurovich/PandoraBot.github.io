@@ -59,6 +59,53 @@ const didYouKnowResponseNo = [
     'That\'s alright! You can\'t know everthing :)'
 ]
 
+
+const possibleYesValue = [
+    'Yes',
+    'yes',
+    'Yeah',
+    'yeah',
+    'Y',
+    'y',
+    'Ya',
+    'ya',
+    'Yes I did',
+    'yes i did',
+    'Yup',
+    'yup',
+    'Yo',
+    'yo',
+    'Sure did',
+    'sure did',
+    'Yas',
+    'yas',
+    'Yep',
+    'yep',
+    'Yaa',
+    'yaa',
+    'You bet',
+    'you bet',
+    'Yeh',
+    'yeh'
+]
+
+const possibleNoValue = [
+    'No',
+    'no',
+    'N',
+    'n',
+    'Nope',
+    'nope',
+    'Nah',
+    'nah',
+    'No i did not',
+    'no i did not',
+    'No I didn\'t',
+    'no i didn\'t',
+    'Nay',
+    'nay'
+]
+
 const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
 /* ChatBot Welcome Question & Response */
@@ -201,6 +248,9 @@ function response() {
     if(userInput.value == "") {
         botChat.textContent = "Try typing Yes or No :)";
     } 
+    if(userInput.value == ) {
+        botChat.textContent = "Try typing Yes or No :)";
+    }
     
         if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
             setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
