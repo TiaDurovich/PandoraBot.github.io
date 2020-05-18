@@ -62,8 +62,6 @@ const didYouKnowResponseNo = [
 
 const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
-const undefinedUserInput = userInput.value(undefined) 
-
 /* ChatBot Welcome Question & Response */
 
 function response() {
@@ -195,7 +193,7 @@ function response() {
     if(userInput.value == "") {
         botChat.textContent = "Try typing Yes or No :)";
     } 
-    if(userInput.value == undefinedUserInput ) {
+    if(userInput.value ==  ) {
         botChat.textContent = "Try typing Yes or No :)";
     }
    
