@@ -29,7 +29,6 @@ window.onload = function response() {
 
 submit.addEventListener("click", response);
 
-
 const welcomeResponse = [
     ', did you know that there may be life on Mars!?',
     ', a full NASA space suit costs 12  million dollars! Did you know that?',
@@ -182,6 +181,15 @@ function response() {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
     }
     if(userInput.value == "No I didnt") {
+        botChat.textContent = didYouKnowResponseNo[randomNumber];
+    }
+    if(userInput.value == "no i didn't") {
+        botChat.textContent = didYouKnowResponseNo[randomNumber];
+    }
+    if(userInput.value == "No I didnt") {
+        botChat.textContent = didYouKnowResponseNo[randomNumber];
+    }
+    if(userInput.value == "no i didnt") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
     }
     if(userInput.value == "N") {
