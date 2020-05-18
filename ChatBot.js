@@ -62,6 +62,8 @@ const didYouKnowResponseNo = [
 
 const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
+const undefinedUserInput = userInput.value(undefined) 
+
 /* ChatBot Welcome Question & Response */
 
 function response() {
@@ -193,6 +195,9 @@ function response() {
     if(userInput.value == "") {
         botChat.textContent = "Try typing Yes or No :)";
     } 
+    if(userInput.value == undefinedUserInput ) {
+        botChat.textContent = "Try typing Yes or No :)";
+    }
    
         if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
             setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
