@@ -112,15 +112,20 @@ const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
 function response() {
    
-    for (index = 0; index < welcomeQuestion.length; index++) {
-        botChat.textContent = userInput.value + welcomeResponse[randomNumber];
-        user.textContent = userInput.value;
-    }
-    if (userInput.value == "Yes") {
-        botChat.textContent = didYouKnowResponseYes[randomNumber];
-    } else if(userInput.value == "No") {
-        botChat.textContent = didYouKnowResponseNo[randomNumber];
-    } else {
-        botChat.textContent = "Try typing Yes or No";
-    }
+   while (index = 0; index < welcomeQuestion.length; index++) {
+     botChat.textContent = userInput.value + welcomeResponse[randomNumber];
+     user.textContent = userInput.value;
+   }
+   if (userInput.value == "Yes") {
+       botChat.textContent = didYouKnowResponseYes[randomNumber];
+   } else if (userInput.value == "No") {
+       botChat.textContent = didYouKnowResponseNo[randomNumber]
+   } else {
+       botChat.textContent = "Try typing Yes or No"
+   }
 }
+   
+   
+   
+   
+    
