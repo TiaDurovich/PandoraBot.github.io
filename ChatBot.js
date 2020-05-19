@@ -115,140 +115,95 @@ function response() {
     for (index = 0; index < welcomeQuestion.length; index++) {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value;
-    }
-    if (userInput.value == "Yes") {
+    } else if (userInput.value == "Yes") {
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "yes") { 
+    } else if(userInput.value == "yes") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "Yeah") { 
+    } else if(userInput.value == "Yeah") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "yeah") { 
+    } else if(userInput.value == "yeah") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "Ya") { 
+    } else if(userInput.value == "Ya") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "ya") { 
+    } else if(userInput.value == "ya") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "Y") { 
+    } else if(userInput.value == "Y") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "y") { 
+    } else if(userInput.value == "y") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "Yes I did") { 
+    } else if(userInput.value == "Yes I did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "Yes, I did") { 
+    } else if(userInput.value == "Yes, I did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "yes i did") { 
+    } else if(userInput.value == "yes i did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "Yes i did") { 
+    } else if(userInput.value == "Yes i did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "Yup") { 
+    } else if(userInput.value == "Yup") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "yup") { 
+    } else if(userInput.value == "yup") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "Sure did") { 
+    } else if(userInput.value == "Sure did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "sure did") { 
+    } else if(userInput.value == "sure did") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "Yas") { 
+    } else if(userInput.value == "Yas") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "yas") { 
+    } else if(userInput.value == "yas") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "Yo") { 
+    } else if(userInput.value == "Yo") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "yo") { 
+    } else if(userInput.value == "yo") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "Yep") { 
+    } else if(userInput.value == "Yep") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "yep") { 
+    } else if(userInput.value == "yep") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "Yaaa") { 
+    } else if(userInput.value == "Yaaa") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "yaa") { 
+    } else if(userInput.value == "yaa") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "You bet") { 
+    } else if(userInput.value == "You bet") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "you bet") { 
+    } else if(userInput.value == "you bet") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "Yeh") { 
+    } else if(userInput.value == "Yeh") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "yeh") { 
+    } else if(userInput.value == "yeh") { 
         botChat.textContent = didYouKnowResponseYes[randomNumber];
-    }
-    if(userInput.value == "No") {
+    } else if(userInput.value == "No") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "no") {
+    } else if(userInput.value == "no") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "Nah") {
+    } else if(userInput.value == "Nah") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "nah") {
+    } else if(userInput.value == "nah") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "Nope") {
+    } else if(userInput.value == "Nope") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "nope") {
+    } else if(userInput.value == "nope") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "No I did not") {
+    } else if(userInput.value == "No I did not") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "no i did not") {
+    } else if(userInput.value == "no i did not") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "No I didn't") {
+    } else if(userInput.value == "No I didn't") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "No I didnt") {
+    } else if(userInput.value == "No I didnt") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "no i didn't") {
+    } else if(userInput.value == "no i didn't") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "No I didnt") {
+    } else if(userInput.value == "No I didnt") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "no i didnt") {
+    } else if(userInput.value == "no i didnt") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "N") {
+    } else if(userInput.value == "N") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "n") {
+    } else if(userInput.value == "n") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    }
-    if(userInput.value == "") {
+    } else if(userInput.value == "") {
         botChat.textContent = "Try typing Yes or No :)";
-    } 
-    else {
+    } else {
         botChat.textContent = "Try typing Yes or No :)";
     }
     
