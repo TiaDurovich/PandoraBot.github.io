@@ -123,3 +123,4 @@ function response() {
     } else {
         botChat.textContent = "Try typing Yes or No";
     }
+}
