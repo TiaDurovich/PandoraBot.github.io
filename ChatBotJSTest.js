@@ -116,7 +116,7 @@ function response() {
         while (botChat.textContent == welcomeQuestion) {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value;
-       }
+       };
    }
    while (botChat.textContent == userInput.value + welcomeResponse[randomNumber]) {
        if (userInput.value == "Yes") {
