@@ -118,8 +118,8 @@ function response() {
         user.textContent = userInput.value;
        }
    }
+   setTimeout(() => {botChat.textContent = userInput.value + welcomeResponse[randomNumber]}, 3000)
    while (botChat.textContent == userInput.value + welcomeResponse[randomNumber]) {
-    setTimeout(() => {botChat.textContent = userInput.value + welcomeResponse[randomNumber]}, 3000)
        if (userInput.value == "Yes") {
            botChat.textContent = didYouKnowResponseYes[randomNumber];
        } else if (userInput.value == "No") {
