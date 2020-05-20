@@ -117,8 +117,6 @@ function response() {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value;
        }
-        while (botChat.textContent == userInput.value + welcomeResponse[randomNumber]) {
-            setTimeout(() => {botChat.textContent = userInput.value + welcomeResponse[randomNumber]}, 3000)
        if (userInput.value == "Yes") {
            botChat.textContent = didYouKnowResponseYes[randomNumber];
        } else if (userInput.value == "No") {
@@ -128,7 +126,7 @@ function response() {
        }
    }
 }
-}
+
    
    
    
