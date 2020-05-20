@@ -112,12 +112,14 @@ const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
 function response() {
    
-   for (index = 0; index < welcomeQuestion.length; index++) {
-        (botChat.textContent = welcomeQuestion) {
+    for (index = 0; index < welcomeQuestion.length; index++) {
+        setTimeout(() => {botChat.textContent = welcomeResponse[randomNumber]}, 3000);
+    (botChat.textContent = welcomeQuestion) {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value;
        }
-   } else if (userInput.value == "Yes") {
+   }
+   if (userInput.value == "Yes") {
        botChat.textContent = didYouKnowResponseYes[randomNumber];
    } else if (userInput.value == "No") {
        botChat.textContent = didYouKnowResponseNo[randomNumber]
