@@ -108,6 +108,8 @@ const possibleNoValue = [
 
 const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
+
+
 /* ChatBot Welcome Question & Response */
 
 function response() {
@@ -203,7 +205,7 @@ function response() {
         botChat.textContent = didYouKnowResponseNo[randomNumber]
     } else if(userInput.value == "") {
         botChat.textContent = "Try typing Yes or No :)"
-    } else if(userInput.value === undefined) {
+    } else if(userInput.value ==) {
         botChat.textContent = "Try typing Yes or No :)";
     }
     
