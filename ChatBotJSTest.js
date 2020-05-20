@@ -115,6 +115,7 @@ function response() {
     for (index = 0; index < welcomeQuestion.length; index++) {
         if (botChat.textContent = welcomeQuestion) {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
+        setTimeout(() => {botChat.textContent = userInput.value + welcomeResponse[randomNumber]}, 3000)
         user.textContent = userInput.value;
        }
    }
