@@ -108,9 +108,9 @@ const possibleNoValue = [
     'nay'
 ]
 
-const welcomeQuestion.length = question1 
+const question1 = welcomeQuestion[randomNumber];
 
-const welcomeResponse.length = question2
+const question2 = welcomeResponse[randomNumber];
 
 const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
