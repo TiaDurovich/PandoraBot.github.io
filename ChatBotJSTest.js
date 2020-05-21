@@ -27,6 +27,8 @@ window.onload = function response() {
     botChat.textContent = welcomeQuestion[randomNumber];
 }
 
+
+
 submit.addEventListener("click", response);
 
 const welcomeResponse = [
@@ -117,13 +119,16 @@ function response() {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value;
        }
+       while (user.textContent == userInput.value) {
         if (userInput.value == "Yes") {
-           botChat.textContent = didYouKnowResponseYes[randomNumber];
-         } else if (userInput.value == "No") {
-           botChat.textContent = didYouKnowResponseNo[randomNumber];
-         } else {
-           botChat.textContent = "Try typing Yes or No"
+            botChat.textContent = didYouKnowResponseYes[randomNumber];
+          } else if (userInput.value == "No") {
+            botChat.textContent = didYouKnowResponseNo[randomNumber];
+          } else {
+            botChat.textContent = "Try typing Yes or No"
+        }
        }
+        
    }
 }
  
