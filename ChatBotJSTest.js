@@ -24,7 +24,7 @@ const welcomeQuestion = [
 
 window.onload = function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
-    botChat.textContent = welcomeQuestion[randomNumber];
+    botChat.textContent = question1;
 }
 
 
