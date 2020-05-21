@@ -118,22 +118,22 @@ const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
 function response() {
    for (index = 0; index < welcomeQuestion.length; index++) {
-        while(botChat.textContent == question1.value) {
-            botChat.textContent = userInput.value + question2.value;
-            user.textContent = userInput.value;
-            setTimeout(() => {botChat.textContent = userInput.value + question2.value }, 3000);;
+        while(botChat.textContent == question1) {
+            botChat.innerHTML = userInput.value + question2;
+            user.innerHTML = userInput.value;
+            setTimeout(() => {botChat.innerHTML = userInput.value + question2 }, 3000);;
             userInput.value = null;
         } 
-        while(botChat.textContent == userInput.value + question2.value) {
+        while(botChat.textContent == userInput.value + question2) {
             if (userInput.value == "Yes") {
-                botChat.textContent = didYouKnowResponseYes[randomNumber];
+                botChat.innerHTML = didYouKnowResponseYes[randomNumber];
             }
             else if (userInput.value == "No") {
                 botChat.textContent = didYouKnowResponseNo[randomNumber];
             }
             else {
                 botChat.textContent = "Try typing Yes or No";
-                setTimeout(() => {botChat.innerHTML = userInput.value + question2.value }, 3000);;
+                setTimeout(() => {botChat.innerHTML = userInput.value + question2 }, 3000);;
             }
         }
     }
