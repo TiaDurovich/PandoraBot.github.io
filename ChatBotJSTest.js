@@ -116,7 +116,16 @@ const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
 /* ChatBot Welcome Question & Response */
 
-
+function response() {
+   for (index = 0; index < welcomeQuestion.length; index++) {
+        while(botChat.textContent == question1) {
+            botChat.textContent = userInput.value + question2;
+            user.textContent = userInput.value;
+            setTimeout(() => {botChat.textContent = userInput.value + question2 }, 3000);;
+            userInput.value = null;
+        } 
+}
+}
  
  
    
