@@ -115,22 +115,28 @@ const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 function response() {
    
     for (index = 0; index < welcomeQuestion.length; index++) {
-        while (botChat.textContent == welcomeQuestion) {
-        botChat.textContent = userInput.value + welcomeResponse[randomNumber];
-        user.textContent = userInput.value;
-        setTimeout(()=> {botChat.textContent = userInput.value + welcomeResponse}, 3000);;
-        userInput.value = null;
-       }
-
-       while (botChat.textContent == userInput.value + welcomeResponse) {
-        if (userInput.value == "Yes") {
-           botChat.textContent = didYouKnowResponseYes[randomNumber];
-         } else if (userInput.value == "No") {
-           botChat.textContent = didYouKnowResponseNo[randomNumber];
-         } else {
-           botChat.textContent = "Try typing Yes or No"
-       }
-   }
+        while(botChat.textContent == welcomeQuestion) {
+            botChat.textContent = userInput.value + welcomeResponse[randomNumber];
+            user.textContent = userInput.value;
+            setTimeout(() => {botChat.textContent = welcomeResponse[randomNumber] }, 2000);;
+            userInput.value = null;
+        } 
+        
+        while(botChat.textContent == welcomeResponse[randomNumber]) {
+            if (userInput.value == "Yes") {
+                botChat.textContent = didYouKnowResponseYes[randomNumber];
+            }
+            else if (userInput.value == "N0") {
+                botChat.textContent = didYouKnowResponseNo[randomNumber];
+            }
+            else {
+                botChat.textContent = "Try typing Yes or No";
+                setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] }, 2000);;
+            }
+        }
+    }
+    
+    
 }
  
  
