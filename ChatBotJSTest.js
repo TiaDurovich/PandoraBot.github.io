@@ -118,17 +118,18 @@ function response() {
         while (botChat.textContent == welcomeQuestion) {
         botChat.textContent = userInput.value + welcomeResponse[randomNumber];
         user.textContent = userInput.value;
+        setTimeout(()=> {botChat.textContent = userInput.value + welcomeResponse}, 3000);;
+        userInput.value = null;
        }
-       while (user.textContent == userInput.value) {
+
+       while (botChat.textContent == userInput.value + welcomeResponse) {
         if (userInput.value == "Yes") {
-            botChat.textContent = didYouKnowResponseYes[randomNumber];
-          } else if (userInput.value == "No") {
-            botChat.textContent = didYouKnowResponseNo[randomNumber];
-          } else {
-            botChat.textContent = "Try typing Yes or No"
-        }
+           botChat.textContent = didYouKnowResponseYes[randomNumber];
+         } else if (userInput.value == "No") {
+           botChat.textContent = didYouKnowResponseNo[randomNumber];
+         } else {
+           botChat.textContent = "Try typing Yes or No"
        }
-        
    }
 }
  
