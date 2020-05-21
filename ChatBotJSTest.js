@@ -113,10 +113,11 @@ const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 /* ChatBot Welcome Question & Response */
 
 function response() {
+   for (index = 0; index < welcomeQuestion.length; index++) {
         while(botChat.textContent == welcomeQuestion[randomNumber]) {
             botChat.textContent = userInput.value + welcomeResponse[randomNumber];
             user.textContent = userInput.value;
-            setTimeout(() => {botChat.textContent = userInput.value + welcomeResponse[randomNumber] }, 2000);;
+            setTimeout(() => {botChat.textContent = userInput.value + welcomeResponse[randomNumber] }, 2000);
             userInput.value = null;
         } 
         
@@ -129,7 +130,7 @@ function response() {
             }
             else {
                 botChat.textContent = "Try typing Yes or No";
-                setTimeout(() => {botChat.innerHTML = userInput.value + welcomeResponse[randomNumber] }, 2000);;
+                setTimeout(() => {botChat.innerHTML = userInput.value + welcomeResponse[randomNumber] }, 2000);
             }
         }
     }
