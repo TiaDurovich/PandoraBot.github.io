@@ -23,8 +23,8 @@ const welcomeQuestion = [
 ]
 
 window.onload = function response() {
-    const randomWelcomeQuestion = Math.floor(Math.random() * (welcomeQuestion.length));
-    botChat.textContent = welcomeQuestion[randomWelcomeQuestion];
+    const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
+    botChat.textContent = "I'm Pandora Bot! What is your name?";
 }
 
 
@@ -119,7 +119,7 @@ const randomWelcomeQuestion = Math.floor(Math.random() * (welcomeQuestion.length
 /* ChatBot Welcome Question & Response */
 
 function response() {
-    while(botChat.textContent == randomWelcomeQuestion) {
+    while(botChat.textContent == "I'm Pandora Bot! What is your name?") {
         botChat.textContent = userInput.value + "!";
         userInput.textContent = userInput.value;
         setTimeout(() => {botChat.textContent = "Did you know that there may be life on Mars!?" }, 2000);;
