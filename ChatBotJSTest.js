@@ -134,5 +134,6 @@ function response() {
             botChat.textContent = "Try typing Yes or No";
             setTimeout(() => {botChat.innerHTML = "Did you know that there may be life on Mars!?" }, 2000);;
         }
+        userInput.value = null;
     }
 }
