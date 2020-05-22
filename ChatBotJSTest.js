@@ -118,11 +118,12 @@ const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
 function response() {
     while(botChat.textContent == "I'm Pandora Bot! What is your name?") {
-        botChat.textContent = userInput.value + ", did you know that there may be life on Mars!?";
+        setTimeout(() => {botChat.textContent = userInput.value + "!" }, 2000);;
+        botChat.textContent = "Did you know that there may be life on Mars!?";
         user.textContent = userInput.value;
-    } 
-    while(botChat.textContent == userInput.value + ", did you know that there may be life on Mars!?") {
         userInput.value = null;
+    } 
+    while(botChat.textContent == "Did you know that there may be life on Mars!?") {
         if (userInput.value == "Yes") {
             botChat.textContent = "Great job";
         }
