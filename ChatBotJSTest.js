@@ -119,7 +119,7 @@ const randomWelcomeQuestion = Math.floor(Math.random() * (welcomeQuestion.length
 /* ChatBot Welcome Question & Response */
 
 function response() {
-    while(botChat.textContent == welcomeQuestion.length) {
+    while(botChat.textContent == randomWelcomeQuestion) {
         botChat.textContent = userInput.value + "!";
         userInput.textContent = userInput.value;
         setTimeout(() => {botChat.textContent = "Did you know that there may be life on Mars!?" }, 2000);;
