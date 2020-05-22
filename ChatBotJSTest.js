@@ -126,14 +126,16 @@ function response() {
     while(botChat.textContent == "Did you know that there may be life on Mars!?") {
         if (userInput.value == "Yes") {
             botChat.textContent = "Great job";
+            userInput.value = null;
         }
         else if (userInput.value == "No") {
             botChat.textContent = "Well, I have a lot more for you to learn :)";
+            userInput.value = null;
         }
         else {
             botChat.textContent = "Try typing Yes or No";
             setTimeout(() => {botChat.innerHTML = "Did you know that there may be life on Mars!?" }, 2000);;
+            userInput.value = null;
         }
-        userInput.value = null;
     }
 }
