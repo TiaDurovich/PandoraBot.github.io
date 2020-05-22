@@ -117,7 +117,6 @@ const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 /* ChatBot Welcome Question & Response */
 
 function response() {
-    for (index = 0; index < welcomeQuestion.length; index++) {
     while(botChat.textContent == "I'm Pandora Bot! What is your name?") {
         botChat.textContent = userInput.value + "!";
         userInput.textContent = userInput.value;
@@ -136,7 +135,7 @@ function response() {
         }
     }
 }
-}
+
  
    
    
