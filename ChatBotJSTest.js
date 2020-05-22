@@ -114,7 +114,6 @@ const question1 = welcomeQuestion[randomNumber];
 const question2 = welcomeResponse[randomNumber];
 
 const randomWelcomeResponse = Math.floor(Math.random() * (welcomeResponse.length));
-const randomWelcomeQuestion = Math.floor(Math.random() * (welcomeQuestion.length));
 
 /* ChatBot Welcome Question & Response */
 
