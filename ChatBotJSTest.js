@@ -27,6 +27,7 @@ window.onload = function response() {
     botChat.textContent = welcomeQuestion[randomNumber];
 }
 
+submit.addEventListener("click", response);
 
 const welcomeResponse = [
     ', did you know that there may be life on Mars!?',
@@ -115,8 +116,6 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
 function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
-    submit.addEventListener("click", response);
-
 
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
         botChat.textContent = userInput.value + "!";
