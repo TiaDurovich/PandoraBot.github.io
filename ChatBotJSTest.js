@@ -113,13 +113,14 @@ const question1 = welcomeQuestion[randomNumber];
 
 const question2 = welcomeResponse[randomNumber];
 
-const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
-const randomWelcomeQuestion = Math.floor(Math.random() * (welcomeQuestion.length));
+const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
 /* ChatBot Welcome Question & Response */
 
 function response() {
-    while(botChat.textContent == "I'm Pandora Bot! What is your name?") {
+    const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
+
+    while(botChat.textContent == welcomeQuestion[randomNumber]) {
         botChat.textContent = userInput.value + "!";
         userInput.textContent = userInput.value;
         setTimeout(() => {botChat.innerHTML = "Did you know that there may be life on Mars!?" }, 2000);;
