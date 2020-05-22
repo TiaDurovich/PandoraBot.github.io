@@ -120,10 +120,9 @@ function response() {
     while(botChat.textContent == "I'm Pandora Bot! What is your name?") {
         botChat.textContent = userInput.value + ", did you know that there may be life on Mars!?";
         user.textContent = userInput.value;
-        const userName = userInput.value;
-        userInput.value = null;
     } 
-    while(botChat.textContent == userName + ", did you know that there may be life on Mars!?") {
+    while(botChat.textContent == userInput.value + ", did you know that there may be life on Mars!?") {
+        userInput.value = null;
         if (userInput.value == "Yes") {
             botChat.textContent = "Great job";
         }
