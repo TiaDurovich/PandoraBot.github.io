@@ -117,17 +117,17 @@ const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
 function response() {
     while(botChat.textContent == "I'm Pandora Bot! What is your name?") {
-        botChat.textContent = userInput.value + ", do you like space?";
+        botChat.textContent = userInput.value + ", did you know that there may be life on Mars!?";
         user.textContent = userInput.value;
         userInput.value = null;
     } 
     
-    while(botChat.textContent == userInput.value + ", do you like space?") {
+    while(botChat.textContent == userInput.value + ", did you know that there may be life on Mars!?") {
         if (userInput.value == "Yes") {
-            botChat.textContent = "";
+            botChat.textContent = "Great job";
         }
         else if (userInput.value == "No") {
-            botChat.textContent = "";
+            botChat.textContent = "Well, I have a lot more for you to learn :)";
         }
         else {
             botChat.textContent = "Try typing Yes or No";
