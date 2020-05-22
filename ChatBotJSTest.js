@@ -121,7 +121,6 @@ function response() {
         user.textContent = userInput.value;
         userInput.value = null;
     } 
-    
     while(botChat.textContent == userInput.value + ", did you know that there may be life on Mars!?") {
         if (userInput.value == "Yes") {
             botChat.textContent = "Great job";
