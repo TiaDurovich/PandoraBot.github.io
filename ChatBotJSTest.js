@@ -129,7 +129,7 @@ function response() {
             userInput.value = null;
         }
         else if (userInput.value == "No") {
-            botChat.textContent = "Well, I have a lot more for you to learn :)";
+            botChat.textContent = didYouKnowResponseNo[randomNumber];
             userInput.value = null;
         }
         else {
