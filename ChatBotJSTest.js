@@ -28,10 +28,6 @@ window.onload = function response() {
 }
 
 
-
-
-submit.addEventListener("click", response);
-
 const welcomeResponse = [
     ', did you know that there may be life on Mars!?',
     ', a full NASA space suit costs 12  million dollars! Did you know that?',
@@ -119,6 +115,8 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
 function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
+    submit.addEventListener("click", response);
+
 
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
         botChat.textContent = userInput.value + "!";
