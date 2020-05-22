@@ -134,14 +134,7 @@ function response() {
         }
         else {
             botChat.textContent = "Try typing Yes or No";
-        }
-    }
-    while(botChat.textContent == "Try typing Yes or No") {
-        if (userInput.value == "Yes") {
-            botChat.textContent = "Great job";
-        }
-        else if (userInput.value == "No") {
-            botChat.textContent = "Well, I have a lot more for you to learn :)";
+            setTimeout(() => {botChat.innerHTML = "Try typing Yes or No" }, 2000);;
         }
     }
 }
