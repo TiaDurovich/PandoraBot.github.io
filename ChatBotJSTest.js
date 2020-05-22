@@ -23,7 +23,6 @@ const welcomeQuestion = [
 ]
 
 window.onload = function response() {
-    const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
     botChat.textContent = "I'm Pandora Bot! What is your name?";
 }
 
