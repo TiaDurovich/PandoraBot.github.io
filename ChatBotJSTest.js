@@ -119,7 +119,6 @@ function response() {
     while(botChat.textContent == "I'm Pandora Bot! What is your name?") {
         botChat.textContent = userInput.value + ", do you like space?";
         user.textContent = userInput.value;
-        setTimeout(() => {botChat.textContent = userInput.value + ", do you like space?" }, 2000);;
         userInput.value = null;
     } 
     
@@ -132,7 +131,6 @@ function response() {
         }
         else {
             botChat.textContent = "Try typing Yes or No";
-            setTimeout(() => {botChat.textContent = userInput.value + ", do you like space?" }, 2000);;
         }
     }
 }
