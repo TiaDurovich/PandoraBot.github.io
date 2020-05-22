@@ -120,7 +120,7 @@ function response() {
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
         botChat.textContent = userInput.value + "!";
         userInput.textContent = userInput.value;
-        setTimeout(() => {botChat.innerHTML = "Did you know that there may be life on Mars!?" }, 2000);;
+        setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] }, 2000);;
         userInput.value = null;
     } 
     while(botChat.textContent == "Did you know that there may be life on Mars!?") {
