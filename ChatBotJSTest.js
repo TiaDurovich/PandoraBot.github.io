@@ -60,7 +60,7 @@ const didYouKnowResponseNo = [
 ]
 
 
-const possibleYesValue = [
+let possibleYesValue = [
     'Yes',
     'yes',
     'Yeah',
