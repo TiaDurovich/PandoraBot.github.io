@@ -125,9 +125,6 @@ function response() {
         setTimeout(() => {botChat.textContent = "Did you know that there may be life on Mars!?" }, 2000);;
         userInput.value = null;
     } 
-}
-
-function response() {
     while(botChat.textContent == "Did you know that there may be life on Mars!?") {
         if (userInput.value == "Yes") {
             botChat.textContent = "Great job";
