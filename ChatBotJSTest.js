@@ -125,10 +125,10 @@ function response() {
     } 
     while(botChat.textContent == "Did you know that there may be life on Mars!?") {
         if (userInput.value == "Yes") {
-            botChat.textContent = "Great job";
+            botChat.textContent = didYouKnowResponseYes[randomNumber];
         }
         else if (userInput.value == "No") {
-            botChat.textContent = "Well, I have a lot more for you to learn :)";
+            botChat.textContent = didYouKnowResponseNo[randomNumber];
         }
         else {
             botChat.textContent = "Try typing Yes or No";
