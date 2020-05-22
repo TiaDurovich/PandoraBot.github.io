@@ -119,17 +119,19 @@ function response() {
     while(botChat.textContent == "I'm Pandora Bot! What is your name?") {
         botChat.textContent = userInput.value + ", did you know that there may be life on Mars!?";
         user.textContent = userInput.value;
-        userInput.value = null;
     } 
     while(botChat.textContent == userInput.value + ", did you know that there may be life on Mars!?") {
         if (userInput.value == "Yes") {
             botChat.textContent = "Great job";
+            userInput.value = null;
         }
         else if (userInput.value == "No") {
             botChat.textContent = "Well, I have a lot more for you to learn :)";
+            userInput.value = null;
         }
         else {
             botChat.textContent = "Try typing Yes or No";
+            userInput.value = null;
         }
     }
 }
