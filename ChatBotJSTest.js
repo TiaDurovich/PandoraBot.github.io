@@ -23,8 +23,7 @@ const welcomeQuestion = [
 ]
 
 window.onload = function response() {
-    const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
-    botChat.textContent = welcomeQuestion[randomNumber];
+    botChat.textContent = "I'm Pandora Bot! What is your name?";
 }
 
 
@@ -119,7 +118,7 @@ const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 
 function response() {
     for (index = 0; index < welcomeQuestion.length; index++) {
-    while(botChat.textContent == welcomeQuestion[randomNumber]) {
+    while(botChat.textContent == "I'm Pandora Bot! What is your name?") {
         botChat.textContent = userInput.value + "!";
         userInput.textContent = userInput.value;
         setTimeout(() => {botChat.textContent = "Did you know that there may be life on Mars!?" }, 2000);;
@@ -127,10 +126,10 @@ function response() {
     } 
     while(botChat.textContent == "Did you know that there may be life on Mars!?") {
         if (userInput.value == "Yes") {
-            botChat.textContent = didYouKnowResponseYes[randomNumber];
+            botChat.textContent = "Great job";
         }
         else if (userInput.value == "No") {
-            botChat.textContent = didYouKnowResponseNo[randomNumber];
+            botChat.textContent = "Well, I have a lot more for you to learn :)";
         }
         else {
             botChat.textContent = "Try typing Yes or No";
