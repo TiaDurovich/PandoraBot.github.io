@@ -118,7 +118,7 @@ const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 /* ChatBot Welcome Question & Response */
 
 function response() {
-    while(botChat.textContent == welcomeQuestion  {
+    while(botChat.textContent == welcomeQuestion {
         botChat.textContent = userInput.value + "!";
         userInput.textContent = userInput.value;
         setTimeout(() => {botChat.innerHTML = "Did you know that there may be life on Mars!?" }, 2000);;
