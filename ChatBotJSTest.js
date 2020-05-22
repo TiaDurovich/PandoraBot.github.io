@@ -30,13 +30,13 @@ window.onload = function response() {
 submit.addEventListener("click", response);
 
 const welcomeResponse = [
-    ', did you know that there may be life on Mars!?',
-    ', a full NASA space suit costs 12  million dollars! Did you know that?',
-    ', did you know that Halleys Comet will orbit past Earth again in the year 2061?',
-    ', the hottest planet in our solar system is Venus! Were you familiar with this?',
-    ', our solar system in roughly 4 billion years old! Did you know this?',
-    ', did you know that Pluto is smaller than the United States?',
-    ', did you know that space is silent?'
+    'Did you know that there may be life on Mars!?',
+    'A full NASA space suit costs 12  million dollars! Did you know that?',
+    'Did you know that Halleys Comet will orbit past Earth again in the year 2061?',
+    'The hottest planet in our solar system is Venus! Were you familiar with this?',
+    'Our solar system in roughly 4 billion years old! Did you know this?',
+    'Did you know that Pluto is smaller than the United States?',
+    'Did you know that space is silent?'
 ]
 
 
@@ -120,7 +120,7 @@ function response() {
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
         botChat.textContent = userInput.value + "!";
         userInput.textContent = userInput.value;
-        setTimeout(() => {botChat.innerHTML = userInput.value + welcomeResponse[randomNumber] }, 2000);;
+        setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] }, 2000);;
         userInput.value = null;
     } 
     while(botChat.textContent == "Did you know that there may be life on Mars!?") {
