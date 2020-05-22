@@ -119,9 +119,9 @@ const randomNumber = Math.floor(Math.random() * (welcomeResponse.length));
 function response() {
     while(botChat.textContent == "I'm Pandora Bot! What is your name?") {
         setTimeout(() => {botChat.textContent = userInput.value + "!" }, 2000);;
+        userInput.value = null;
         botChat.textContent = "Did you know that there may be life on Mars!?";
         user.textContent = userInput.value;
-        userInput.value = null;
     } 
     while(botChat.textContent == "Did you know that there may be life on Mars!?") {
         if (userInput.value == "Yes") {
