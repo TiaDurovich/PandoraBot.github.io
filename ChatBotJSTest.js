@@ -116,7 +116,7 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
 function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
-    const randomValue = Math.floor(Math.random() * (possibleYesValue.value));
+    const randomValue = Math.floor(Math.random() * (possibleYesValue.includes));
 
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
         botChat.textContent = userInput.value + "!";
