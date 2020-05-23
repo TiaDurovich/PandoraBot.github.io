@@ -27,7 +27,7 @@ h3 {
     font-size: medium;
 }
 
-.button {
+button {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
