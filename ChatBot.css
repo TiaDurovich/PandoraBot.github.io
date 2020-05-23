@@ -28,6 +28,12 @@ h3 {
     font-size: medium;
 }
 
+h4 {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-variant: small-caps;
+}
+
 button {
     background-color: #A0C3F6; 
   color: white;
