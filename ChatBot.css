@@ -8,22 +8,20 @@ h1 {
 
 h1 {
     text-align: center;
-    font-family: 'Abril Fat Face';
-}
+    font-family: 'Roboto Condensed', sans-serif;}
 
 p {
     text-align: center;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 h2 {
     color: white;
-    font-family: 'Abril Fat Face';
-}
+    font-family: 'Roboto Condensed', sans-serif;}
 
 h3 {
     text-align: center;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: medium;
 }
 
