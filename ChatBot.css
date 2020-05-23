@@ -38,6 +38,10 @@ button {
   border-radius: 8px;
 }
  
+input {
+    border-radius: 8px;
+    outline: #A0C3F6;
+}
 
 
 </style>
