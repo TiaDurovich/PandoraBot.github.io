@@ -124,7 +124,7 @@ function response() {
         userInput.value = null;
     } 
     while(botChat.textContent == welcomeResponse[randomNumber]) {
-        if (userInput.value == possibleYesValue.indexOf) {
+        if (userInput.value == possibleYesValue<String>.values) {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
             userInput.value = null;
         }
