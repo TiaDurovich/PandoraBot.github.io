@@ -37,6 +37,11 @@ button {
     display: inline-block;
     font-size: 16px;
   }
+
+  button:hover {
+    background-color: #A0C3F6; 
+    color: white;
+  }
   
 
 </style>
