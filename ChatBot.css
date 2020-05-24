@@ -35,6 +35,9 @@ p {
 
 p {
     font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 50%;
 }
 
 h2 {
