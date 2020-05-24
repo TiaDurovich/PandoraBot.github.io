@@ -14,29 +14,15 @@
 
 <style>
 
-.writing {
-    position: absolute;
-}
-
-title {
+h1 {
     font-style: bold;
     font-size: xx-large;
     text-shadow: 2px 2px #000000;
 } 
 
-title {
+h1 {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-}
-
-.title {
-    margin-top: 25px;
-}
-
-.writing {
-    margin-left: 5%;
-    position: absolute;
-    color: #ffffff;
 }
 
 p {
