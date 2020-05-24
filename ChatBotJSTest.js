@@ -147,10 +147,12 @@ function response() {
     while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
         if (userInput.value == "Yes") {
             botChat.textContent = "Awesome! First of all I need to know your rough location"
+            userInput.value = null:
             setTimeout(() => {botChat.textContent = "What country are you in... or even better, what hemisphere are you located within?"}, 3500)
         }
         if (userInput.value == "No") {
             botChat.textContent = "Okay"
+            userInput.value = null;
         }
     }
 }
