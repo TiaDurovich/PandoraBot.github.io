@@ -10,9 +10,6 @@
     background-position: center;
 }
 
-.writing {
-    position: absolute;
-}
 
 <style>
 
@@ -26,10 +23,12 @@ h1 {
 h1 {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
 }
 
 p {
     text-align: center;
+    position: absolute;
 }
 
 p {
@@ -39,17 +38,21 @@ p {
 h2 {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
 }
 
 h3 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: medium;
+    position: absolute;
 }
 
 h4 {
     color: black;
-    font-family: 'Raleway', sans-serif;}
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+}
 
 
  button{
@@ -63,6 +66,7 @@ h4 {
     color:rgb(0, 0, 0);
     text-align:center;
     transition: all 0.2s;
+    position: absolute;
     }
     
 button:hover{
@@ -74,6 +78,7 @@ input {
     border-radius: 2px;
     font-family: 'Roboto', sans-serif;
     font-size: small;
+    position: absolute;
 }
 
 
