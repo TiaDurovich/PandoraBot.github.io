@@ -4,7 +4,7 @@
     padding: 0;
 }
 #particles-js{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://i.guim.co.uk/img/media/4ad994832235d125e5c8d7a18211046e4ff10c12/0_0_5472_3648/master/5472.jpg?width=300&quality=45&auto=format&fit=max&dpr=2&s=e85c5147fd3db26e0531266cb8b9d3c0);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://astrocampschool.org/wp-content/uploads/2019/01/Stars.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
