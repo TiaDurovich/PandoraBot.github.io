@@ -11,8 +11,11 @@
 }
 
 
-
 <style>
+
+.writing {
+    position: absolute;
+}
 
 h1 {
     font-style: bold;
