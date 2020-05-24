@@ -35,9 +35,6 @@ h4 {
     color: black;
     font-family: 'Raleway', sans-serif;}
 
-large-header {
-        background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
-     }
 
  button{
     display:inline-block;
