@@ -155,6 +155,14 @@ function response() {
             userInput.value = null;
         }
     }
-}
+    while(botChat.textContent = "What country are you in... or even better, what hemisphere are you located within?") {
+        if (userInput.value == "Northern") {
 
+
+        }
+        if (userInput.value == "Southern") {
+            
+        }
+}
+    
 
