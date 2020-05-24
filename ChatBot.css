@@ -45,7 +45,7 @@ h2 {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -55,19 +55,9 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: medium;
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-h4 {
-    color: black;
-    font-family: 'Raleway', sans-serif;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 
 
  button{
