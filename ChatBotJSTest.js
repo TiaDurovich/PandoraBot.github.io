@@ -115,8 +115,8 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
 
 const userInputValue = userInput.textContent;
-const yes = possibleYesValue.includes(userInput.value);
-const no = possibleNoValue.includes(userInput.value);
+const yes = possibleYesValue.includes(userInputValue);
+const no = possibleNoValue.includes(userInputValue);
 
 /* ChatBot Welcome Question & Response */
 
@@ -125,7 +125,6 @@ function response() {
 
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
         botChat.textContent = userInputValue + "!";
-        userInput.textContent = userInputValue;
         setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] + " Yes or No?" }, 2000);;
         userInputValue = null;
     } 
