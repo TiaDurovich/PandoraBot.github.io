@@ -124,4 +124,5 @@ function response() {
 
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
         botChat.textContent = "Welcome Question. Type Yes or No."
-        
+    }
+}   
