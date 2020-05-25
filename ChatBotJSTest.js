@@ -106,6 +106,7 @@ const possibleNoValue = [
     'nay'
 ]
 
+
 const question1 = welcomeQuestion[randomNumber];
 
 const question2 = welcomeResponse[randomNumber];
