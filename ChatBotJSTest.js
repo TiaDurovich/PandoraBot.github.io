@@ -113,7 +113,7 @@ const question2 = welcomeResponse[randomNumber];
 
 const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
-const userInput = userInput.textContent;
+const userInput.value = userInput.textContent
 const yes = possibleYesValue.includes(input);
 const no = possibleNoValue.includes(input);
 
@@ -123,23 +123,24 @@ function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
-        botChat.textContent = userInput + "!";
+        botChat.textContent = userInput.value + "!";
+        userInput.textContent = userInput.value;
         setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] + " Yes or No?" }, 2000);;
-        userInput = null;
+        userInput.value = null;
     } 
     while(botChat.textContent == welcomeResponse[randomNumber]) {
-        if (userInput == "Yes") {
+        if (userInput.value == "Yes") {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
-            userInput = null;
+            userInput.value = null;
         }
-        else if (userInput == "No") {
+        else if (userInput.value == "No") {
             botChat.textContent = didYouKnowResponseNo[randomNumber];
-            userInput = null;
+            userInput.value = null;
         }
         else {
             botChat.textContent = "Try typing Yes or No";
             setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] }, 2000);;
-            userInput = null;
+            userInput.value = null;
         }
     }
     if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
@@ -149,28 +150,28 @@ function response() {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
 }
     while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
-        if (userInput == "Yes") {
+        if (userInput.value == "Yes") {
             botChat.textContent = "Awesome! First of all I need to know your rough location"
-            userInput = null;
+            userInput.value = null;
             setTimeout(() => {botChat.textContent = "What hemisphere are you in? Northern or Southern?"}, 3500)
         }
     }
     while(botChat.textContent == "What hemisphere are you in? Northern or Southern?") {
-        if (userInput == "Northern") {
+        if (userInput.value == "Northern") {
             botChat.textContent = "You can see..."
-            userInput = null;
+            userInput.value = null;
         }
-        else if(userInput == "northern") {
+        else if(userInput.value == "northern") {
             botChat.textContent = "You can see..."
-            userInput = null;
+            userInput.value = null;
         }
-        else if(userInput == "Southern") {
+        else if(userInput.value == "Southern") {
             botChat.textContent = "You can see this..."
-            userInput = null;
+            userInput.value = null;
         }
-        else if(userInput == "southern") {
+        else if(userInput.value == "southern") {
             botChat.textContent = "You can see this..."
-            userInput = null;
+            userInput.value = null;
         }
         else {
             botChat.textContent = "That's not a hemisphere! Try typing Northern or Southern."
