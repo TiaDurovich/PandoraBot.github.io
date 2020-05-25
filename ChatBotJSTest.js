@@ -123,7 +123,7 @@ function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
-        botChat.textContent = userInput + "!";
+        botChat.textContent = userInput.value + "!";
         setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] + " Yes or No?" }, 2000);;
         userInput.value = null;
     } 
