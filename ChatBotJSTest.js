@@ -149,11 +149,29 @@ function response() {
         if (userInput.value == "Yes") {
             botChat.textContent = "Awesome! First of all I need to know your rough location"
             userInput.value = null;
-            setTimeout(() => {botChat.textContent = "What country are you in... or even better, what hemisphere are you located within?"}, 3500)
+            setTimeout(() => {botChat.textContent = "What hemisphere are you in? Northern or Southern?"}, 3500)
         }
-        if (userInput.value == "No") {
-            botChat.textContent = "Okay"
+    }
+    while(botChat.textContent == "What hemisphere are you in? Northern or Southern?") {
+        if (userInput.value == "Northern") {
+            botChat.textContent = "You can see..."
             userInput.value = null;
+        }
+        else if(userInput.value == "northern") {
+            botChat.textContent = "You can see..."
+            userInput.value = null;
+        }
+        else if(userInput.value == "Southern") {
+            botChat.textContent = "You can see this..."
+            userInput.value = null;
+        }
+        else if(userInput.value == "southern") {
+            botChat.textContent = "You can see this..."
+            userInput.value = null;
+        }
+        else {
+            botChat.textContent = "That's not a hemisphere! Try typing Northern or Southern."
+            setTimeout(() => {botChat.innerHTML = "What hemisphere are you in? Northern or Southern?"}, 2000);;
         }
     }
 }
