@@ -129,18 +129,18 @@ function response() {
         userInput.value = null;
     } 
     while(botChat.textContent == welcomeResponse[randomNumber]) {
-        if (userInput.value == "Yes") {
+        if (userInput == "Yes") {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
-            userInput.value = null;
+            userInput = null;
         }
-        else if (userInput.value == "No") {
+        else if (userInput == "No") {
             botChat.textContent = didYouKnowResponseNo[randomNumber];
-            userInput.value = null;
+            userInput = null;
         }
         else {
             botChat.textContent = "Try typing Yes or No";
             setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] }, 2000);;
-            userInput.value = null;
+            userInput = null;
         }
     }
     if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
@@ -150,28 +150,28 @@ function response() {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
 }
     while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
-        if (userInput.value == "Yes") {
+        if (userInput == "Yes") {
             botChat.textContent = "Awesome! First of all I need to know your rough location"
-            userInput.value = null;
+            userInput = null;
             setTimeout(() => {botChat.textContent = "What hemisphere are you in? Northern or Southern?"}, 3500)
         }
     }
     while(botChat.textContent == "What hemisphere are you in? Northern or Southern?") {
-        if (userInput.value == "Northern") {
+        if (userInput == "Northern") {
             botChat.textContent = "You can see..."
-            userInput.value = null;
+            userInput = null;
         }
-        else if(userInput.value == "northern") {
+        else if(userInput == "northern") {
             botChat.textContent = "You can see..."
-            userInput.value = null;
+            userInput = null;
         }
-        else if(userInput.value == "Southern") {
+        else if(userInput == "Southern") {
             botChat.textContent = "You can see this..."
-            userInput.value = null;
+            userInput = null;
         }
-        else if(userInput.value == "southern") {
+        else if(userInput == "southern") {
             botChat.textContent = "You can see this..."
-            userInput.value = null;
+            userInput = null;
         }
         else {
             botChat.textContent = "That's not a hemisphere! Try typing Northern or Southern."
