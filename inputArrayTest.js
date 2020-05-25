@@ -121,3 +121,7 @@ const no = possibleNoValue.includes(userInput.value);
 
 function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
+
+    while(botChat.textContent == welcomeQuestion[randomNumber]) {
+        botChat.textContent = "Welcome Question. Type Yes or No."
+        
