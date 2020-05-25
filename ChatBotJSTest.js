@@ -114,7 +114,6 @@ const question2 = welcomeResponse[randomNumber];
 const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
 
-const userInput = userInput.textContent;
 const yes = possibleYesValue.includes(userInput.value);
 const no = possibleNoValue.includes(userInput.value);
 
