@@ -124,6 +124,6 @@ function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
-        botChat.textContent = userValue
+        botChat.textContent = userValue.value
     }
 }   
