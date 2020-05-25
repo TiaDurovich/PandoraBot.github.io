@@ -124,6 +124,7 @@ function response() {
 
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
         botChat.textContent = userInput.value + "!";
+        userInput.textContent = userInput.value;
         setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] + " Yes or No?" }, 2000);;
         userInput.value = null;
     } 
