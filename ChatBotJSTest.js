@@ -113,6 +113,8 @@ const question2 = welcomeResponse[randomNumber];
 
 const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
+var userInput = userInput.textContent
+
 const yes = possibleYesValue.includes(userInput.value);
 const no = possibleNoValue.includes(userInput.value);
 
@@ -128,18 +130,18 @@ function response() {
         userInput.value = null;
     } 
     while(botChat.textContent == welcomeResponse[randomNumber]) {
-        if (userInput.value == yes) {
+        if (userInput == "Yes") {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
-            userInput.value = null;
+            userInput = null;
         }
-        else if (userInput.value == "No") {
+        else if (userInput == "No") {
             botChat.textContent = didYouKnowResponseNo[randomNumber];
-            userInput.value = null;
+            userInput = null;
         }
         else {
             botChat.textContent = "Try typing Yes or No";
             setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] }, 2000);;
-            userInput.value = null;
+            userInput = null;
         }
     }
     if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
