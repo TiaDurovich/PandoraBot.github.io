@@ -113,6 +113,8 @@ const question2 = welcomeResponse[randomNumber];
 
 const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
+const input = userInput.textContent
+
 /* ChatBot Welcome Question & Response */
 
 function response() {
@@ -125,7 +127,7 @@ function response() {
         userInput.value = null;
     } 
     while(botChat.textContent == welcomeResponse[randomNumber]) {
-        if (userInput.value == "Yes") {
+        if (userInput.value == ) {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
             userInput.value = null;
         }
