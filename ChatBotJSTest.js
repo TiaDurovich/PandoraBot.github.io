@@ -166,11 +166,16 @@ function response() {
             userInput.value = null;
         }
         else if(userInput.value == "Southern") {
-            botChat.textContent = "You can see this..."
+            botChat.textContent = "You will be able to see Alpha Centauri!"
+            setTimeout(() => {botChat.textContent = "Alpha Centauri is the closest star system to Earth, and is just 4.37 light years away!"}, 3500)
+            setTimeout(() => {botChat.textContent = "That means it takes light 4.37 years to travel from Alpha Centauri to Earth!"}, 7000)
+
             userInput.value = null;
         }
         else if(userInput.value == "southern") {
-            botChat.textContent = "You can see this..."
+            botChat.textContent = "You will be able to see Alpha Centauri!"
+            setTimeout(() => {botChat.textContent = "Alpha Centauri is the closest star system to Earth, and is just 4.37 light years away!"}, 3500)
+            setTimeout(() => {botChat.textContent = "That means it takes light 4.37 years to travel from Alpha Centauri to Earth!"}, 7000)
             userInput.value = null;
         }
         else {
