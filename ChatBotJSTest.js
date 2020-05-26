@@ -158,11 +158,16 @@ function response() {
     }
     while(botChat.textContent == "What hemisphere are you in? Northern or Southern?") {
         if (userInput.value == "Northern") {
-            botChat.textContent = "You can see..."
+            botChat.textContent = "Near the start of the new year you will be able to see Orion Nebula!"
+            setTimeout(() => {botChat.textContent = "Orion Nebula is visible to the naked eye, and is situated within the Milky Way"}, 3500)
+            setTimeout(() => {botChat.textContent = "A nebula is a giant cloud of gas and dust in space!"}, 9000)
+
             userInput.value = null;
         }
         else if(userInput.value == "northern") {
-            botChat.textContent = "You can see..."
+            botChat.textContent = "Near the start of the new year you will be able to see Orion Nebula!"
+            setTimeout(() => {botChat.textContent = "Orion Nebula is visible to the naked eye, and is situated within the Milky Way"}, 3500)
+            setTimeout(() => {botChat.textContent = "A nebula is a giant cloud of gas and dust in space!"}, 9000)
             userInput.value = null;
         }
         else if(userInput.value == "Southern") {
