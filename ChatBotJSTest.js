@@ -194,7 +194,7 @@ function response() {
     while (botChat.textContent == "Do you want to know more? Yes or No?") {
         if(userInput.value == "Yes") { 
             botChat.textContent = "You will also be able to point out various constellations!"
-            setTimeout(() => {botChat.textContent = "Lyra, Draco, Gemini and Taurua are just a few!"}, 10000)
+            setTimeout(() => {botChat.textContent = "Lyra, Draco, Gemini and Taurua are just a few!"}, 4000)
         }
         else if(userInput.value == "No") {
             botChat.textContent = "Next question"
@@ -207,7 +207,7 @@ function response() {
     while(botChat.textContent == "Do you want to know more? Type Yes or No?") {
         if(userInput.value == "Yes") {
             botChat.textContent = "You will also be able to see the Southern Cross!"
-            setTimeout(() => {botChat.textContent = "Sailors often use it as a compass in the night sky"}, 10000)
+            setTimeout(() => {botChat.textContent = "Sailors often use it as a compass in the night sky"}, 4000)
 
         }
         else if(userInput.value == "No") {
