@@ -208,7 +208,7 @@ function response() {
             userInput.value = null;
         }
         else if(userInput.value == "No") {
-            botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
+            botChat.textContent = "Okay"
             userInput.value = null;
         }
         else {
@@ -224,7 +224,7 @@ function response() {
             userInput.value = null;
         }
         else if(userInput.value == "No") {
-            botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
+            botChat.textContent = "Okay"
             userInput.value = null;
         }
         else {
