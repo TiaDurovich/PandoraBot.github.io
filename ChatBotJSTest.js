@@ -159,6 +159,11 @@ function response() {
             botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
             userInput.value = null;
         }
+        else {
+            botChat.textContent = "Try typing Yes or No";
+            setTimeout(() => {botChat.innerHTML = "Want to know about celestial bodies you can see in the night sky?"}, 2000);;
+            userInput.value = null;
+        }
     }
     while(botChat.textContent == "What hemisphere are you in? Northern or Southern?") {
         if (userInput.value == "Northern") {
