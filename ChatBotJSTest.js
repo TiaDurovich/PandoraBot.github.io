@@ -237,6 +237,11 @@ function response() {
         setTimeout(() => {botChat.textContent = "Let's talk about planets!"}, 3000)
         setTimeout(() => {botChat.textContent = "What planet in our solar system do you want to know about?"}, 3000)
     }
+    while(botChat.textContent == "What planet in our solar system do you want to know about?") {
+        if(userInput.value == "Planet"){
+            botChat.textContent = "something"
+        }
+    }
 }
     
 
