@@ -194,28 +194,33 @@ function response() {
     while (botChat.textContent == "Do you want to know more? Yes or No?") {
         if(userInput.value == "Yes") { 
             botChat.textContent = "You will also be able to point out various constellations!"
-            setTimeout(() => {botChat.textContent = "Lyra, Draco, Gemini and Taurua are just a few!"}, 4000)
+            setTimeout(() => {botChat.textContent = "Lyra, Draco, Gemini and Taurus are just a few!"}, 4000)
+            userInput.value = null;
         }
         else if(userInput.value == "No") {
             botChat.textContent = "Next question"
+            userInput.value = null;
         }
         else {
             botChat.textContent = "Try typing Yes or No :)"
             setTimeout(() => {botChat.innerHTML = "Do you want to know more? Yes or No?"}, 3000);;
+            userInput.value = null;
         }
     }
     while(botChat.textContent == "Do you want to know more? Type Yes or No?") {
         if(userInput.value == "Yes") {
             botChat.textContent = "You will also be able to see the Southern Cross!"
             setTimeout(() => {botChat.textContent = "Sailors often use it as a compass in the night sky"}, 4000)
-
+            userInput.value = null;
         }
         else if(userInput.value == "No") {
             botChat.textContent = "Next question"
+            userInput.value = null;
         }
         else {
             botChat.textContent = "Try typing Yes or No :)"
             setTimeout(() => {botChat.innerHTML = "Do you want to know more? Type Yes or No?"}, 3000);;
+            userInput.value = null;
         }
     }
 }
