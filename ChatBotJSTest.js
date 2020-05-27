@@ -233,12 +233,6 @@ function response() {
             userInput.value = null;
         }
     }
-    while(botChat.textContent == "That's okay! There is plenty more about space to talk about :)") {
-        if(userInput.value == "Yes") {
-        setTimeout(() => {botChat.textContent = "Let's talk about planets!"}, 3000)
-        setTimeout(() => {botChat.textContent = "What planet in our solar system do you want to know about?"}, 3000)
-     }
-    }
 }
     
 
