@@ -161,21 +161,21 @@ function response() {
             botChat.textContent = "Near the start of the new year you will be able to see Orion Nebula!"
             setTimeout(() => {botChat.textContent = "Orion Nebula is visible to the naked eye, and is situated within the Milky Way"}, 4500)
             setTimeout(() => {botChat.textContent = "A nebula is a giant cloud of gas and dust in space!"}, 10000)
-            setTimeout(() => {botChat.textContent = "Do you want to know more? Yes or No?"}, 13000)
+            setTimeout(() => {botChat.textContent = "Do you want to know more? Yes or No?"}, 15000)
             userInput.value = null;
         }
         else if(userInput.value == "northern") {
             botChat.textContent = "Near the start of the new year you will be able to see Orion Nebula!"
             setTimeout(() => {botChat.textContent = "Orion Nebula is visible to the naked eye, and is situated within the Milky Way"}, 4500)
             setTimeout(() => {botChat.textContent = "A nebula is a giant cloud of gas and dust in space!"}, 10000)
-            setTimeout(() => {botChat.textContent = "Do you want to know more? Yes or No?"}, 13000)
+            setTimeout(() => {botChat.textContent = "Do you want to know more? Yes or No?"}, 15000)
             userInput.value = null;
         }
         else if(userInput.value == "Southern") {
             botChat.textContent = "You will be able to see Alpha Centauri!"
             setTimeout(() => {botChat.textContent = "Alpha Centauri is the closest star system to Earth, and is just 4.37 light years away!"}, 4500)
             setTimeout(() => {botChat.textContent = "That means it takes light 4.37 years to travel from Alpha Centauri to Earth!"}, 10000)
-            setTimeout(() => {botChat.textContent = "Do you want to know more? Type Yes or No?"}, 13000)
+            setTimeout(() => {botChat.textContent = "Do you want to know more? Type Yes or No?"}, 15000)
 
             userInput.value = null;
         }
@@ -183,7 +183,7 @@ function response() {
             botChat.textContent = "You will be able to see Alpha Centauri!"
             setTimeout(() => {botChat.textContent = "Alpha Centauri is the closest star system to Earth, and is just 4.37 light years away!"}, 4500)
             setTimeout(() => {botChat.textContent = "That means it takes light 4.37 years to travel from Alpha Centauri to Earth!"}, 10000)
-            setTimeout(() => {botChat.textContent = "Do you want to know more? Type Yes or No?"}, 13000)
+            setTimeout(() => {botChat.textContent = "Do you want to know more? Type Yes or No?"}, 15000)
             userInput.value = null;
         }
         else {
