@@ -155,6 +155,10 @@ function response() {
             userInput.value = null;
             setTimeout(() => {botChat.textContent = "What hemisphere are you in? Northern or Southern?"}, 3500)
         }
+        else if (userInput.value == "No") {
+            botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
+            userInput.value = null;
+        }
     }
     while(botChat.textContent == "What hemisphere are you in? Northern or Southern?") {
         if (userInput.value == "Northern") {
@@ -199,7 +203,7 @@ function response() {
             userInput.value = null;
         }
         else if(userInput.value == "No") {
-            botChat.textContent = "Next question"
+            botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
             userInput.value = null;
         }
         else {
@@ -215,7 +219,7 @@ function response() {
             userInput.value = null;
         }
         else if(userInput.value == "No") {
-            botChat.textContent = "Next question"
+            botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
             userInput.value = null;
         }
         else {
@@ -223,6 +227,10 @@ function response() {
             setTimeout(() => {botChat.innerHTML = "Do you want to know more? Type Yes or No?"}, 3000);;
             userInput.value = null;
         }
+    }
+    while(botChat.textContent == "That's okay! There is plenty more about space to talk about :)") {
+        setTimeout(() => {botChat.textContent = "Let's talk about planets!"}, 3000)
+        setTimeout(() => {botChat.textContent = "What planet in our solar system do you want to know about?"}, 3000)
     }
 }
     
