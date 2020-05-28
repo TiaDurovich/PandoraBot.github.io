@@ -135,7 +135,6 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
                 userInput.value = null;
             }
             else if (userInput.value == "No") {
-                submit.addEventListener(secondResponse)
                 userInput.value = null;
             }
             else {
@@ -147,5 +146,6 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 }
 
 function secondResponse() {
+    for (userInput.value == "No")
     botChat.textContent = "This is the second response";
 }
