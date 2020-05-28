@@ -136,7 +136,7 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
                 userInput.value = null;
             }
             else if (userInput.value == "No") {
-                botChat.textContent = didYouKnowResponseNo[randomNumber];
+                captureEvents secondResponse();
                 userInput.value = null;
             }
             else {
