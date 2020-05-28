@@ -126,10 +126,10 @@ function response() {
 
     while(botChat.textContent == welcomeQuestion[randomNumber]){
         if (userInput == "Yes"){
-            botChat.textContent == "Great"
+            botChat.textContent = "Great"
         }
         else if (userInput == "No"){
-            capturesecondResponse();
+            botChat.textContent = "Not great"
 
         }
     }
