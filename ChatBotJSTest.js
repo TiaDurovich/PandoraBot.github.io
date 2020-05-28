@@ -119,10 +119,6 @@ const no = possibleNoValue.includes(userInput);
 
 
 
-const moveOn = "That's okay! There is plenty more about space to talk about :)";
-
-
-
 /* ChatBot Welcome Question & Response */
 
 function response() {
@@ -162,7 +158,7 @@ function response() {
             setTimeout(() => {botChat.textContent = "What hemisphere are you in? Northern or Southern?"}, 3500)
         }
         else if (userInput.value == "No") {
-            botChat.textContent = moveOn;
+            botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
             userInput.value = null;
         }
         else {
@@ -214,7 +210,7 @@ function response() {
             userInput.value = null;
         }
         else if(userInput.value == "No") {
-            botChat.textContent = moveOn;
+            botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
             userInput.value = null;
         }
         else {
@@ -230,7 +226,7 @@ function response() {
             userInput.value = null;
         }
         else if(userInput.value == "No") {
-            botChat.textContent = moveOn;
+            botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
             userInput.value = null;
         }
         else {
@@ -245,9 +241,9 @@ function response() {
 
 
 
-
 function secondResponse() {
     while(botChat.textContent == "That's okay! There is plenty more about space to talk about :)") {
         setTimeout(() => {botChat.textContent = "Let's talk about planets!"}, 4000)
     }
 }
+
