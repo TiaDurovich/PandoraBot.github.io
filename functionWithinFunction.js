@@ -148,6 +148,4 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
 
 
-function secondResponse(userInput.value == "No") {
-    botChat.textContent = "This is the second response!"
-}
+
