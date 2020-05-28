@@ -157,7 +157,7 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
                 setTimeout(() => {botChat.textContent = "What hemisphere are you in? Northern or Southern?"}, 3500)
             }
             else if (userInput.value == "No") {
-                botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
+                botChat.textContent = "hat's okay! There is plenty more about space to talk about :)"
                 userInput.value = null;
             }
             else {
@@ -166,10 +166,9 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
                 userInput.value = null;
             }
         }
-        console.log(new response) {
-            while(botChat.textContent == "That's okay! There is plenty more about space to talk about :)")
+        while(botChat.textContent == "That's okay! There is plenty more about space to talk about :)"){
             setTimeout(() => {botChat.innerHTML = "SECOND RESPONSE"}, 2000);;
-        }    
+        }
     }
     
 
