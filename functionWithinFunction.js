@@ -166,6 +166,10 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
                 userInput.value = null;
             }
         }
+        console.log(new response) {
+            while(botChat.textContent == "That's okay! There is plenty more about space to talk about :)")
+            setTimeout(() => {botChat.innerHTML = "SECOND RESPONSE"}, 2000);;
+        }    
     }
     
 
