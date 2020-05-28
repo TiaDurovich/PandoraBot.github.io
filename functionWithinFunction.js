@@ -122,21 +122,33 @@ const no = possibleNoValue.includes(userInput);
 /* ChatBot Welcome Question & Response */
 
 function response() {
-    const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
-
-    while(botChat.textContent == welcomeQuestion[randomNumber]){
-        if (userInput == "Yes"){
-            botChat.textContent = "Great"
+const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
+    
+     while(botChat.textContent == welcomeQuestion[randomNumber]) {
+            botChat.textContent = userInput.value + "!";
+            userInput.textContent = userInput.value;
+            setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]}, 2000);;
+            userInput.value = null;
+        } 
+     while(botChat.textContent == welcomeResponse[randomNumber]) {
+            if (userInput.value == "Yes") {
+                botChat.textContent = didYouKnowResponseYes[randomNumber];
+                userInput.value = null;
+            }
+            else if (userInput.value == "No") {
+                botChat.textContent = didYouKnowResponseNo[randomNumber];
+                userInput.value = null;
+            }
+            else {
+                botChat.textContent = "Try typing Yes or No";
+                setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] }, 2000);;
+                userInput.value = null;
+            }
         }
-        else if (userInput == "No"){
-            botChat.textContent = "Not great"
-
-        }
-    }
 }
 
 
 
 function secondResponse() {
-    botChat.textContent = "This is the seconf response!"
+    botChat.textContent = "This is the second response!"
 }
