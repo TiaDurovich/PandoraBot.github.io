@@ -22,7 +22,7 @@ const welcomeQuestion = [
     'Welcome human... what is your name?'
 ]
 
-window.onload = function response() {
+window.onload = function onload() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
     botChat.textContent = welcomeQuestion[randomNumber];
 }
