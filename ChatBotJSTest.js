@@ -1,5 +1,5 @@
 const userInput = document.querySelector("#userInput");
-var submit = document.querySelector("#submit");
+const submit = document.querySelector("#submit");
 const botChat = document.querySelector("#botChat");
 const user = document.querySelector("#user");
 
@@ -108,14 +108,20 @@ const possibleNoValue = [
 
 
 const question1 = welcomeQuestion[randomNumber];
-
 const question2 = welcomeResponse[randomNumber];
+
 
 const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
 
 const yes = possibleYesValue.includes(userInput);
 const no = possibleNoValue.includes(userInput);
+
+
+
+const moveOn = "That's okay! There is plenty more about space to talk about :)";
+
+
 
 /* ChatBot Welcome Question & Response */
 
@@ -156,8 +162,7 @@ function response() {
             setTimeout(() => {botChat.textContent = "What hemisphere are you in? Northern or Southern?"}, 3500)
         }
         else if (userInput.value == "No") {
-            submit.addEventListener("click", secondResponse);
-            botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
+            botChat.textContent = moveOn
             userInput.value = null;
         }
         else {
@@ -209,8 +214,7 @@ function response() {
             userInput.value = null;
         }
         else if(userInput.value == "No") {
-            submit.addEventListener("click", secondResponse);
-            botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
+            botChat.textContent = moveOn
             userInput.value = null;
         }
         else {
@@ -226,8 +230,7 @@ function response() {
             userInput.value = null;
         }
         else if(userInput.value == "No") {
-            submit.addEventListener("click", secondResponse);
-            botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
+            botChat.textContent = moveOn
             userInput.value = null;
         }
         else {
