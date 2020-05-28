@@ -156,6 +156,7 @@ function response() {
             setTimeout(() => {botChat.textContent = "What hemisphere are you in? Northern or Southern?"}, 3500)
         }
         else if (userInput.value == "No") {
+            submit.addEventListener("click", secondResponse);
             botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
             userInput.value = null;
         }
@@ -208,6 +209,7 @@ function response() {
             userInput.value = null;
         }
         else if(userInput.value == "No") {
+            submit.addEventListener("click", secondResponse);
             botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
             userInput.value = null;
         }
@@ -224,6 +226,7 @@ function response() {
             userInput.value = null;
         }
         else if(userInput.value == "No") {
+            submit.addEventListener("click", secondResponse);
             botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
             userInput.value = null;
         }
@@ -233,7 +236,6 @@ function response() {
             userInput.value = null;
         }
     }
-    submit.addEventListener("click", secondResponse);
 }
     
 
