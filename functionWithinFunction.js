@@ -145,7 +145,7 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
                 userInput.value = null;
             }
         }
-        while(botChat.textContent == moveOn) {
+        while(botChat.textContent == null) {
             botChat.textContent = "Next question"
         }
 }
