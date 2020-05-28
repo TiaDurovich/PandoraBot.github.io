@@ -158,7 +158,7 @@ function response() {
             setTimeout(() => {botChat.textContent = "What hemisphere are you in? Northern or Southern?"}, 3500)
         }
         else if (userInput.value == "No") {
-            botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
+            botChat.textContent = "That's okay! There is plenty more about space to talk about :)";
             userInput.value = null;
         }
         else {
@@ -210,7 +210,7 @@ function response() {
             userInput.value = null;
         }
         else if(userInput.value == "No") {
-            botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
+            botChat.textContent = "That's okay! There is plenty more about space to talk about :)";
             userInput.value = null;
         }
         else {
@@ -226,7 +226,7 @@ function response() {
             userInput.value = null;
         }
         else if(userInput.value == "No") {
-            botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
+            botChat.textContent = "That's okay! There is plenty more about space to talk about :)";
             userInput.value = null;
         }
         else {
@@ -235,15 +235,12 @@ function response() {
             userInput.value = null;
         }
     }
+    while (botChat.textContent = "That's okay! There is plenty more about space to talk about :)") {
+        setTimeout(() => {botChat.innerHTML = "Let's talk about planets"}, 3000);;
+    }
 }
     
 
 
 
-
-function secondResponse() {
-    while(botChat.textContent == "That's okay! There is plenty more about space to talk about :)") {
-        setTimeout(() => {botChat.textContent = "Let's talk about planets!"}, 4000)
-    }
-}
 
