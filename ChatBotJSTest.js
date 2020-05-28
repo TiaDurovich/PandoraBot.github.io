@@ -233,7 +233,7 @@ function response() {
             userInput.value = null;
         }
     }
-
+    submit.addEventListener("click", secondResponse);
 }
     
 
