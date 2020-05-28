@@ -242,6 +242,6 @@ function response() {
 
 function secondResponse() {
     while(botChat.textContent == "That's okay! There is plenty more about space to talk about :)") {
-        setTimeout(() => {botChat.textContent = "Let's talk about planets!"}, 4000)
+   botChat.textContent = "Let's talk about planets"
     }
 }
