@@ -117,7 +117,7 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 const yes = possibleYesValue.includes(userInput);
 const no = possibleNoValue.includes(userInput);
 
-
+var moveOn = "Second response";
 
 /* ChatBot Welcome Question & Response */
 
@@ -136,6 +136,7 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
                 userInput.value = null;
             }
             else if (userInput.value == "No") {
+                botChat.textContent = moveOn;
                 userInput.value = null;
             }
             else {
@@ -146,8 +147,3 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
         }
 }
 
-
-
-function secondResponse(userInput.value("No")) {
-    botChat.textContent = "This is the second response!";
-}
