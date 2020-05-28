@@ -1,5 +1,5 @@
 const userInput = document.querySelector("#userInput");
-const submit = document.querySelector("#submit");
+var submit = document.querySelector("#submit");
 const botChat = document.querySelector("#botChat");
 const user = document.querySelector("#user");
 
@@ -233,6 +233,7 @@ function response() {
             userInput.value = null;
         }
     }
+
 }
     
 
@@ -242,6 +243,6 @@ function response() {
 
 function secondResponse() {
     while(botChat.textContent == "That's okay! There is plenty more about space to talk about :)") {
-   botChat.textContent = "Let's talk about planets"
+        setTimeout(() => {botChat.textContent = "Let's talk about planets!"}, 4000)
     }
 }
