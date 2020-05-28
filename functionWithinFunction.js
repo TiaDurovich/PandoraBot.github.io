@@ -143,5 +143,28 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
                 userInput.value = null;
             }
         }
-}
+        if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
+            setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
+    }
+        if (botChat.textContent == didYouKnowResponseNo[randomNumber]) {
+            setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
+    }
+        while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
+            if (userInput.value == "Yes") {
+                botChat.textContent = "Awesome! First of all I need to know your rough location"
+                userInput.value = null;
+                setTimeout(() => {botChat.textContent = "What hemisphere are you in? Northern or Southern?"}, 3500)
+            }
+            else if (userInput.value == "No") {
+                botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
+                userInput.value = null;
+            }
+            else {
+                botChat.textContent = "Try typing Yes or No";
+                setTimeout(() => {botChat.innerHTML = "Want to know about celestial bodies you can see in the night sky?"}, 2000);;
+                userInput.value = null;
+            }
+        }
+    }
+    
 
