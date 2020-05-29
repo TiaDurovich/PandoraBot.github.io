@@ -190,7 +190,6 @@ function response() {
 
             userInput.value = null;
         }
-    }
         else {
             botChat.textContent = "That's not a hemisphere! Try typing Northern or Southern."
             setTimeout(() => {botChat.innerHTML = "What hemisphere are you in? Northern or Southern?"}, 3000);;
