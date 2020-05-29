@@ -235,6 +235,9 @@ function response() {
             userInput.value = null;
         }
     }
+    if(botChat.textContent == "That's okay! There is plenty more about space to talk about :)"){
+        setTimeout(() => {botChat.innerHTML = "SECOND RESPONSE"}, 3000);;
+    }
 }
     
 
