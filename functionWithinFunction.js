@@ -144,9 +144,6 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
                 userInput.value = null;
             }
         }
-        while(botChat.textContent == "That's okay! There is plenty more about space to talk about :)"){
-            setTimeout(() => {botChat.innerHTML = "SECOND RESPONSE"}, 2000);;
-        }
         if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
             setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
     }
@@ -168,6 +165,9 @@ const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
                 setTimeout(() => {botChat.innerHTML = "Want to know about celestial bodies you can see in the night sky?"}, 2000);;
                 userInput.value = null;
             }
+        }
+        while(botChat.textContent == "That's okay! There is plenty more about space to talk about :)"){
+            setTimeout(() => {botChat.innerHTML = "SECOND RESPONSE"}, 2000);
         }
     }
     
