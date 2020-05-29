@@ -236,7 +236,8 @@ function response() {
         }
     }
     if(botChat.textContent == "That's okay! There is plenty more about space to talk about :)"){
-        setTimeout(() => {botChat.innerHTML = "SECOND RESPONSE"}, 3000);;
+        setTimeout(() => {botChat.innerHTML = "Let's talk about planets!"}, 3000);;
+        setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 6000);;
     }
 }
     
