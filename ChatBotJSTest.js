@@ -182,7 +182,7 @@ function response() {
             setTimeout(() => {botChat.textContent = "Do you want to know more? Yes or No?"}, 15000)
             userInput.value = null;
         }
-        else if(userInput.value == "Southern") {
+        else if(userInput.value == "Southern" || "southern") {
             botChat.textContent = "You will be able to see Alpha Centauri!"
             setTimeout(() => {botChat.textContent = "Alpha Centauri is the closest star system to Earth, and is just 4.37 light years away!"}, 4500)
             setTimeout(() => {botChat.textContent = "That means it takes light 4.37 years to travel from Alpha Centauri to Earth!"}, 10000)
@@ -190,13 +190,7 @@ function response() {
 
             userInput.value = null;
         }
-        else if(userInput.value == "southern") {
-            botChat.textContent = "You will be able to see Alpha Centauri!"
-            setTimeout(() => {botChat.textContent = "Alpha Centauri is the closest star system to Earth, and is just 4.37 light years away!"}, 4500)
-            setTimeout(() => {botChat.textContent = "That means it takes light 4.37 years to travel from Alpha Centauri to Earth!"}, 10000)
-            setTimeout(() => {botChat.textContent = "Do you want to know more? Type Yes or No?"}, 15000)
-            userInput.value = null;
-        }
+    }
         else {
             botChat.textContent = "That's not a hemisphere! Try typing Northern or Southern."
             setTimeout(() => {botChat.innerHTML = "What hemisphere are you in? Northern or Southern?"}, 3000);;
