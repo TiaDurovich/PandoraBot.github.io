@@ -227,11 +227,11 @@ function response() {
         setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 6000);;
     }
     while (botChat.textContent == "What planet do you want to know about?") {
-        if(userInput.value == "Mercury" || "mercury") {
+        if(userInput.value == "Mercury") {
             botChat.textContent = "Mercury..."
             userInput.value = null;
         }
-        else if(userInput.value == "Venus" || "venus") {
+        else if(userInput.value == "Venus") {
             botChat.textContent = "Venus..."
             userInput.value = null;
         }
