@@ -235,6 +235,39 @@ function response() {
             botChat.textContent = "Venus..."
             userInput.value = null;
         }
+        else if(userInput.value == ("Earth" || "earth")){
+            botChat.textContent = "Earth..."
+            userInput.value = null;
+        }
+        else if(userInput.value == ("Mars" || "mars")){
+            botChat.textContent = "Mars..."
+            userInput.value = null;
+        }
+        else if(userInput.value == ("Jupiter" || "jupiter")){
+            botChat.textContent == "Jupiter..."
+            userInput.value = null;
+        }
+        else if (userInput.value == ("Saturn" || "saturn")){
+            botChat.textContent == "Saturn..."
+            userInput.value = null;
+        }
+        else if (userInput.value == ("Uranus" || "uranus")){
+            botChat.textContent == "Uranus..."
+            userInput.value = null;
+        }
+        else if (userInput.value == ("Neuptune" || "neptune")){
+            botChat.textContent == "Neptune..."
+            userInput.value = null;
+        }
+        else if (userInput.value == ("Pluto" || "pluto")){
+            botChat.textContent = "Pluto hasn't been calssfied as a planey since 2006!"
+            setTimeout(() => {botChat.innerHTML = "It is now officially classed as a dawrf planet"}, 3000);;
+            setTimeout(() => {botChat.innerHTML = "What planet do you wany to know about?"}, 6000);;
+            userInput.value = null;
+        }
+        else {
+            botChat.textContent = "That's not a planet silly, try typing..."
+        }
     }
 }
     
