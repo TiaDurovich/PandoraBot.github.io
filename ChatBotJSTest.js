@@ -235,10 +235,6 @@ function response() {
             botChat.textContent = "Venus..."
             userInput.value = null;
         }
-        else(userInput.value == "Earth" || "earth") {
-            botChat.textContent = "Earth..."
-            userInput.value = null;
-        }
     }
 }
     
