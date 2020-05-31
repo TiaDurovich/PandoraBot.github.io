@@ -107,6 +107,16 @@ const possibleNoValue = [
     'nay'
 ]
 
+const listOfPlanets = [
+    'Mecury',
+    'Venus',
+    'Earth',
+    'Mars',
+    'Jupiter',
+    'Saturn',
+    'Uranus',
+    'Neptune'
+]
 
 const question1 = welcomeQuestion[randomNumber];
 const question2 = welcomeResponse[randomNumber];
@@ -266,7 +276,8 @@ function response() {
             userInput.value = null;
         }
         else {
-            botChat.textContent = "That's not a planet silly, try typing..."
+            botChat.textContent = "That's not a planet silly, try typing " + listOfPlanets[randomNumber];
+            setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 3000);;
         }
     }
 }
