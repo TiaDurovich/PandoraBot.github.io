@@ -231,7 +231,7 @@ function response() {
             botChat.textContent = "Mercury...";
             userInput.value = null;
         }
-        if else(userInput.value == "Venus" || "venus") {
+        else if(userInput.value == "Venus" || "venus") {
             botChat.textContent = "Venus...";
             userInput.value = null;
         }
