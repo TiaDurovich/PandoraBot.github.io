@@ -228,15 +228,15 @@ function response() {
     }
     while (botChat.textContent == "What planet do you want to know about?") {
         if(userInput.value == "Mercury" || "mercury") {
-            botChat.textContent = "Mercury...";
+            botChat.textContent = "Mercury..."
             userInput.value = null;
         }
         else if(userInput.value == "Venus" || "venus") {
-            botChat.textContent = "Venus...";
+            botChat.textContent = "Venus..."
             userInput.value = null;
         }
         else(userInput.value == "Earth" || "earth") {
-            botChat.textContent = "Earth...";
+            botChat.textContent = "Earth..."
             userInput.value = null;
         }
     }
