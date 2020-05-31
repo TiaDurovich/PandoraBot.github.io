@@ -286,7 +286,7 @@ function response() {
         else {
             botChat.textContent = "That's not a planet silly! Remember names begin with capital letters";
             setTimeout(() => {botChat.innerHTML = "Try typing " + listOfPlanets[randomNumber];}, 4000);;
-            setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 4000);;
+            setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 7000);;
             userInput.value = null;
         }
     }
