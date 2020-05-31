@@ -284,10 +284,6 @@ function response() {
             setTimeout(() => {botChat.innerHTML = "What planet do you wany to know about?"}, 6000);;
             userInput.value = null;
         }
-        else {
-            botChat.textContent = "That's not a planet silly, try typing " + listOfPlanets[randomNumber];
-            setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 3000);;
-        }
     }
 }
     
