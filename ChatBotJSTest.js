@@ -237,7 +237,7 @@ function response() {
         setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 6000);;
     }
     while (botChat.textContent == "What planet do you want to know about?") {
-        if(userInput.value == "Mercury" || "mercury") {
+        if(userInput.value == ("Mercury" || "mercury")) {
             botChat.textContent = "Mercury is the smallest planet in our solar system, and is closest to the sun"
             setTimeout(() => {botChat.innerHTML = "Only two space crafts have ever visited Mercury! The last time was in 2004!"}, 4500);;
             userInput.value = null;
