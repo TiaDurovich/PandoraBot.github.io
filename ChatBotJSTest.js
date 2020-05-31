@@ -263,22 +263,22 @@ function response() {
             setTimeout(() => {botChat.innerHTML = "It's magnetic field is also 14 times stronger than Earths!"}, 3000);;
             userInput.value = null;
         }
-        else if (userInput.value == ("Saturn" || "saturn")){
+        else if(userInput.value == ("Saturn" || "saturn")){
             botChat.textContent == "Saturn has an incredible 62 moons!"
             setTimeout(() => {botChat.innerHTML = "It is also the least dense planet in our solar system"}, 3000);;
             userInput.value = null;
         }
-        else if (userInput.value == ("Uranus" || "uranus")){
+        else if(userInput.value == ("Uranus" || "uranus")){
             botChat.textContent == "It takes Uranus 84 Earth years to travel once around the sun!"
             setTimeout(() => {botChat.innerHTML = "It is the coldest of all the planets in out solar system, reaching to -224 degrees C"}, 4500);;
             userInput.value = null;
         }
-        else if (userInput.value == ("Neuptune" || "neptune")){
+        else if(userInput.value == ("Neuptune" || "neptune")){
             botChat.textContent == "Neptune is named after Roman the god of the sea"
             setTimeout(() => {botChat.innerHTML = "Only one spacecraft has ever flown by Neptune. It happened over 30 years ago!"}, 4000);;
             userInput.value = null;
         }
-        else if (userInput.value == ("Pluto" || "pluto")){
+        else if(userInput.value == ("Pluto" || "pluto")){
             botChat.textContent = "Pluto hasn't been calssfied as a planey since 2006!"
             setTimeout(() => {botChat.innerHTML = "It is now officially classed as a dawrf planet"}, 3000);;
             setTimeout(() => {botChat.innerHTML = "What planet do you wany to know about?"}, 6000);;
