@@ -278,13 +278,13 @@ function response() {
             setTimeout(() => {botChat.innerHTML = "Only one spacecraft has ever flown by Neptune. It happened over 30 years ago!"}, 4000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Pluto" || "pluto"){
+        else if(userInput.value == ("Pluto" || "pluto")){
             botChat.textContent = "Pluto hasn't been calssfied as a planet since 2006!"
             setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 4000);;
             userInput.value = null;
         }
         else {
-            botChat.textContent == "That's not a planet silly! Try typing " + listOfPlanets[randomNumber];
+            botChat.textContent == ("That's not a planet silly! Try typing " + listOfPlanets[randomNumber]);
             setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 4000);;
             userInput.value = null;
         }
