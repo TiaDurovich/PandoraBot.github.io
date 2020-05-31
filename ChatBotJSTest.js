@@ -237,54 +237,55 @@ function response() {
         setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 6000);;
     }
     while (botChat.textContent == "What planet do you want to know about?") {
-        if(userInput.value == "Mercury" || userInput.value == "mercury") {
+        if(userInput.value == "Mercury") {
             botChat.textContent = "Mercury is the smallest planet in our solar system, and is closest to the sun"
             setTimeout(() => {botChat.innerHTML = "Only two space crafts have ever visited Mercury! The last time was in 2004!"}, 4500);;
             userInput.value = null;
         }
-        else if(userInput.value == "Venus" || userInput.value == "veuns") {
+        else if(userInput.value == "Venus") {
             botChat.textContent = "Venus and Earth are very similar in size"
             setTimeout(() => {botChat.innerHTML = "Also, Venus rotates the Sun in the opposite direction to Earth!"}, 3000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Earth" || userInput.value == "earth"){
+        else if(userInput.value == "Earth"){
             botChat.textContent = "Earth is where we are right now!"
             setTimeout(() => {botChat.innerHTML = "It is the densest planet in our solar system, and its rotation is slowing!"}, 3000);;
             setTimeout(() => {botChat.innerHTML = "That means, in 140 million years one day on Earth will be 25 hours long!"}, 8000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Mars" || userInput.value == "mars"){
+        else if(userInput.value == "Mars"){
             botChat.textContent = "Mars is home to the tallest mountain in our solar system!"
             setTimeout(() => {botChat.innerHTML = "It also has the largest dust storms in our solar system!"}, 4000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Jupiter" || userInput.value == "jupiter"){
+        else if(userInput.value == "Jupiter"){
             botChat.textContent = "Jupiter is 2.5 times more massive than all the other planets in our solar system!"
             setTimeout(() => {botChat.innerHTML = "It's magnetic field is also 14 times stronger than Earths!"}, 4000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Saturn" || userInput.value ==  "saturn"){
+        else if(userInput.value == "Saturn"){
             botChat.textContent = "Saturn has an incredible 62 moons!"
             setTimeout(() => {botChat.innerHTML = "It is also the least dense planet in our solar system"}, 4000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Uranus" || userInput.value == "uranus"){
+        else if(userInput.value == "Uranus"){
             botChat.textContent = "It takes Uranus 84 Earth years to travel once around the sun!"
             setTimeout(() => {botChat.innerHTML = "It is the coldest of all the planets in out solar system, reaching to -224 degrees C"}, 4000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Neptune" || userInput.value == "neptune"){
+        else if(userInput.value == "Neptune"){
             botChat.textContent = "Neptune is named after Roman the god of the sea"
             setTimeout(() => {botChat.innerHTML = "Only one spacecraft has ever flown by Neptune. It happened over 30 years ago!"}, 4000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Pluto" || userInput.value ==  "pluto"){
+        else if(userInput.value == "Pluto"){
             botChat.textContent = "Pluto hasn't been calssfied as a planet since 2006!"
             setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 4000);;
             userInput.value = null;
         }
         else {
-            botChat.textContent == "That's not a planet silly! Try typing " + listOfPlanets[randomNumber];
+            botChat.textContent == "That's not a planet silly! Remember names begin with capital letters"
+            setTimeout(() => {botChat.innerHTML = "Try typing " + listOfPlanets[randomNumber];}, 4000);;
             setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 4000);;
             userInput.value = null;
         }
