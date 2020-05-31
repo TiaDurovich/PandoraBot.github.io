@@ -247,38 +247,38 @@ function response() {
             setTimeout(() => {botChat.innerHTML = "Also, Venus rotates the Sun in the opposite direction to Earth!"}, 3000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Earth"){
+        else if(userInput.value == "Earth") {
             botChat.textContent = "Earth is where we are right now!"
             setTimeout(() => {botChat.innerHTML = "It is the densest planet in our solar system, and its rotation is slowing!"}, 3000);;
             setTimeout(() => {botChat.innerHTML = "That means, in 140 million years one day on Earth will be 25 hours long!"}, 8000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Mars"){
+        else if(userInput.value == "Mars") {
             botChat.textContent = "Mars is home to the tallest mountain in our solar system!"
             setTimeout(() => {botChat.innerHTML = "It also has the largest dust storms in our solar system!"}, 4000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Jupiter"){
+        else if(userInput.value == "Jupiter") {
             botChat.textContent = "Jupiter is 2.5 times more massive than all the other planets in our solar system!"
             setTimeout(() => {botChat.innerHTML = "It's magnetic field is also 14 times stronger than Earths!"}, 4000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Saturn"){
+        else if(userInput.value == "Saturn") {
             botChat.textContent = "Saturn has an incredible 62 moons!"
             setTimeout(() => {botChat.innerHTML = "It is also the least dense planet in our solar system"}, 4000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Uranus"){
+        else if(userInput.value == "Uranus") {
             botChat.textContent = "It takes Uranus 84 Earth years to travel once around the sun!"
             setTimeout(() => {botChat.innerHTML = "It is the coldest of all the planets in out solar system, reaching to -224 degrees C"}, 4000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Neptune"){
+        else if(userInput.value == "Neptune") {
             botChat.textContent = "Neptune is named after Roman the god of the sea"
             setTimeout(() => {botChat.innerHTML = "Only one spacecraft has ever flown by Neptune. It happened over 30 years ago!"}, 4000);;
             userInput.value = null;
         }
-        else if(userInput.value == "Pluto"){
+        else if(userInput.value == "Pluto") {
             botChat.textContent = "Pluto hasn't been calssfied as a planet since 2006!"
             setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 4000);;
             userInput.value = null;
