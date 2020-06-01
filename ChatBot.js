@@ -203,7 +203,7 @@ function response() {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
     } else if(userInput.value == "n") {
         botChat.textContent = didYouKnowResponseNo[randomNumber];
-    } else if(userInput.value == "") {
+    } else {
         botChat.textContent = "Try typing Yes or No :)";
     } 
     
