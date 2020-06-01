@@ -299,6 +299,21 @@ function response() {
             userInput.value = null;
         }
     }
+    while (botChat.textContent == "Do you want to know about another planet? Yes or No?"){
+        if(userInput.value == "Yes"){
+            botChat.textContent = "What planet do you want to know about?"
+            userInput.value = null;
+        }
+        else if (userInput.value == "No"){
+            botChat.textContent = "Something"
+            userInput.value = null;
+        }
+        else {
+            botChat.textContent = "Try typing Yes or No"
+            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?" }, 3000);;
+            userInput.value = null;
+        }
+    }
 }
 
 
