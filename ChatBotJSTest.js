@@ -236,7 +236,7 @@ function response() {
         setTimeout(() => {botChat.innerHTML = "Let's talk about planets!"}, 3000);;
         setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 6000);;
     }
-    while (botChat.textContent == "What planet do you want to know about?") {
+    while (botChat.textContent == "What planet in out solar system do you want to know about?") {
         if(userInput.value == "Mercury") {
             botChat.textContent = "Mercury is the smallest planet in our solar system, and is closest to the sun"
             setTimeout(() => {botChat.innerHTML = "Only two space crafts have ever visited Mercury! The last time was in 2004!"}, 4500);;
@@ -295,13 +295,13 @@ function response() {
         else {
             botChat.textContent = "That's not a planet silly! Remember names begin with capital letters";
             setTimeout(() => {botChat.innerHTML = "Try typing " + listOfPlanets[randomNumber];}, 4000);;
-            setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 7000);;
+            setTimeout(() => {botChat.innerHTML = "What planet in our solar system do you want to know about?"}, 7000);;
             userInput.value = null;
         }
     }
     while (botChat.textContent == "Do you want to know about another planet? Yes or No?"){
         if(userInput.value == "Yes"){
-            botChat.textContent = "What planet do you want to know about?"
+            botChat.textContent = "What planet in our solar system do you want to know about?"
             userInput.value = null;
         }
         else if (userInput.value == "No"){
@@ -310,7 +310,7 @@ function response() {
         }
         else {
             botChat.textContent = "Try typing Yes or No"
-            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?" }, 3000);;
+            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet in our solar system? Yes or No?" }, 3000);;
             userInput.value = null;
         }
     }
