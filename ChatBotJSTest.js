@@ -139,10 +139,12 @@ function response() {
         if (userInput.value == " "){
             botChat.textContent = "Please type your name below :)"
         }
+        else {
         botChat.textContent = userInput.value + "!";
         userInput.textContent = userInput.value;
         setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]}, 2000);;
         userInput.value = null;
+        }
     } 
     while(botChat.textContent == welcomeResponse[randomNumber]) {
         if (userInput.value == "Yes") {
