@@ -31,10 +31,10 @@ const welcomeQuestion = [
 window.onload = function onload() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
     botChat.textContent = welcomeQuestion[randomNumber];
+    submit.addEventListener("click", response);
     alert("When talking to Pandora Bot, please answer the appropriate questions with either Yes or No");
 }
 
-submit.addEventListener("click", response);
 
 const welcomeResponse = [
     'Did you know that there may be life on Mars!?',
