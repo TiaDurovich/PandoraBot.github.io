@@ -152,8 +152,13 @@ function response() {
         setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]}, 2000);;
         userInput.value = null;
         }
+        submit.addEventListener("click", testResponse);
     }
 
+
+
+
+function testResponse() {
     while(botChat.textContent == welcomeResponse[randomNumber]) {
         if (userInput.value == "Yes") {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
