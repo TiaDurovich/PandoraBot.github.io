@@ -261,7 +261,7 @@ function response() {
             botChat.textContent = "Earth is where we are right now!"
             setTimeout(() => {botChat.innerHTML = "It is the densest planet in our solar system, and its rotation is slowing!"}, 3000);;
             setTimeout(() => {botChat.innerHTML = "That means, in 140 million years one day on Earth will be 25 hours long!"}, 8000);;
-            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 12000);;
+            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 14000);;
             userInput.value = null;
         }
         else if(userInput.value == "Mars") {
