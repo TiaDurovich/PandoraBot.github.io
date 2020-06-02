@@ -226,10 +226,7 @@ function response() {
         }
         submit.addEventListener("click", forthResponse);
     }
-}
-
-
-function forthResponse(){
+    
     while (botChat.textContent == "Do you want to know more? Yes or No?") {
         if(userInput.value == "Yes") { 
             botChat.textContent = "You will also be able to point out various constellations!"
