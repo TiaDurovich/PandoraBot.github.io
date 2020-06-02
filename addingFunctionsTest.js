@@ -190,7 +190,6 @@ function response() {
         else if (userInput.value == "No") {
             botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
             userInput.value = null;
-            setTimeout(function(){ forthResponse(); }, 3000);
         }
         else {
             botChat.textContent = "Try typing Yes or No";
@@ -199,10 +198,7 @@ function response() {
         }
         submit.addEventListener("click", thirdResponse);
     }
-}
 
-
-    function thirdResponse(){
     while(botChat.textContent == "What hemisphere are you in? Northern or Southern?") {
         if (userInput.value == "Northern") {
             botChat.textContent = "Near the start of the new year you will be able to see Orion Nebula!"
@@ -224,9 +220,8 @@ function response() {
             setTimeout(() => {botChat.innerHTML = "What hemisphere are you in? Northern or Southern?"}, 3000);;
             userInput.value = null;
         }
-        submit.addEventListener("click", forthResponse);
     }
-    
+
     while (botChat.textContent == "Do you want to know more? Yes or No?") {
         if(userInput.value == "Yes") { 
             botChat.textContent = "You will also be able to point out various constellations!"
