@@ -173,7 +173,13 @@ function secondResponse(){
             setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] }, 2000);;
             userInput.value = null;
         }
+        submit.addEventListener("click", thirdResponse);
     }
+}
+
+
+
+function thirdResponse(){
     if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
 }
