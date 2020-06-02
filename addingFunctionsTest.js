@@ -1,4 +1,3 @@
-
 /* Function after function code
 setTimeout(function(){ nextquestion(); }, 3000);
 submit.addEventListener("click", anotherQuestion);
@@ -31,10 +30,10 @@ const welcomeQuestion = [
 window.onload = function onload() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
     botChat.textContent = welcomeQuestion[randomNumber];
+    submit.addEventListener("click", response);
     alert("When talking to Pandora Bot, please answer the appropriate questions with either Yes or No");
 }
 
-submit.addEventListener("click", response);
 
 const welcomeResponse = [
     'Did you know that there may be life on Mars!?',
@@ -152,7 +151,8 @@ function response() {
         setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]}, 2000);;
         userInput.value = null;
         }
-    } 
+    }
+
     while(botChat.textContent == welcomeResponse[randomNumber]) {
         if (userInput.value == "Yes") {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
@@ -170,10 +170,16 @@ function response() {
     }
     if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
+        submit.addEventListener("click", secondResponse);
 }
     if (botChat.textContent == didYouKnowResponseNo[randomNumber]) {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
+        submit.addEventListener("click", secondResponse);
 }
+}
+
+
+    function secondResponse(){
     while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
         if (userInput.value == "Yes") {
             botChat.textContent = "Awesome! First of all I need to know your rough location"
@@ -330,11 +336,3 @@ function response() {
         }
     }
 }
-
-
-
-
-
-
-
-
