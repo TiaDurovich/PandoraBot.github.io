@@ -198,6 +198,7 @@ function response() {
         }
         submit.addEventListener("click", thirdResponse);
     }
+}
 
 
     function thirdResponse(){
