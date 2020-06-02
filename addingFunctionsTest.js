@@ -196,7 +196,11 @@ function response() {
             setTimeout(() => {botChat.innerHTML = "Want to know about celestial bodies you can see in the night sky?"}, 2000);;
             userInput.value = null;
         }
+        submit.addEventListener("click", thirdResponse);
     }
+
+
+    function thirdResponse(){
     while(botChat.textContent == "What hemisphere are you in? Northern or Southern?") {
         if (userInput.value == "Northern" || "northern") {
             botChat.textContent = "Near the start of the new year you will be able to see Orion Nebula!"
