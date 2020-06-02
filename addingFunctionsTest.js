@@ -190,7 +190,7 @@ function response() {
         else if (userInput.value == "No") {
             botChat.textContent = "That's okay! There is plenty more about space to talk about :)"
             userInput.value = null;
-            submit.addEventListener("click", forthResponse);
+            setTimeout(function(){ forthResponse(); }, 3000);
         }
         else {
             botChat.textContent = "Try typing Yes or No";
