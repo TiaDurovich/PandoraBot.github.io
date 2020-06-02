@@ -151,7 +151,7 @@ function response() {
         userInput.textContent = userInput.value;
         setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]}, 2000);;
         userInput.value = null;
-        submit.addEventListener("click", secondResponse);
+        setTimeout(function(){ secondResponse(); }, 2000);
         }
     }
 }
