@@ -151,9 +151,12 @@ function response() {
         userInput.textContent = userInput.value;
         setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]}, 2000);;
         userInput.value = null;
+        submit.addEventListener("click", secondResponse);
         }
     }
+}
 
+function secondResponse(){
     while(botChat.textContent == welcomeResponse[randomNumber]) {
         if (userInput.value == "Yes") {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
@@ -171,16 +174,16 @@ function response() {
     }
     if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
-        submit.addEventListener("click", secondResponse);
+        submit.addEventListener("click", thirdResponse);
 }
     if (botChat.textContent == didYouKnowResponseNo[randomNumber]) {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
-        submit.addEventListener("click", secondResponse);
+        submit.addEventListener("click", thirdResponse);
 }
 }
 
 
-    function secondResponse(){
+    function thirdResponse(){
     while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
         if (userInput.value == "Yes") {
             botChat.textContent = "Awesome! First of all I need to know your rough location"
