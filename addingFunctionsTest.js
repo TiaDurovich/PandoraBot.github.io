@@ -154,6 +154,7 @@ function response() {
         }
         submit.addEventListener("click", testResponse);
     }
+}
 
 
 
