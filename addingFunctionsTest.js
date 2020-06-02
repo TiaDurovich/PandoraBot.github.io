@@ -151,37 +151,23 @@ function response() {
         userInput.textContent = userInput.value;
         setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]}, 2000);;
         userInput.value = null;
-        submit.addEventListener("click", secondResponse);
         }
-    }
-} 
-
-
-
-function secondResponse(){
+    } 
     while(botChat.textContent == welcomeResponse[randomNumber]) {
         if (userInput.value == "Yes") {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
             userInput.value = null;
-            submit.addEventListener("click", thirdResponse);
         }
         else if (userInput.value == "No") {
             botChat.textContent = didYouKnowResponseNo[randomNumber];
             userInput.value = null;
-            submit.addEventListener("click", thirdResponse);
         }
         else {
             botChat.textContent = "Try typing Yes or No";
             setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] }, 2000);;
             userInput.value = null;
-            submit.addEventListener("click", secondResponse);
         }
     }
-}
-
-
-
-function thirdResponse(){
     if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
 }
