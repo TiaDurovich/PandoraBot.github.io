@@ -108,7 +108,7 @@ const possibleNoValue = [
 ]
 
 const listOfPlanets = [
-    'Mecury',
+    'Mercury',
     'Venus',
     'Earth',
     'Mars',
