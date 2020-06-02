@@ -163,17 +163,19 @@ function secondResponse(){
         if (userInput.value == "Yes") {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
             userInput.value = null;
+            submit.addEventListener("click", thirdResponse);
         }
         else if (userInput.value == "No") {
             botChat.textContent = didYouKnowResponseNo[randomNumber];
             userInput.value = null;
+            submit.addEventListener("click", thirdResponse);
         }
         else {
             botChat.textContent = "Try typing Yes or No";
             setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] }, 2000);;
             userInput.value = null;
+            submit.addEventListener("click", secondResponse);
         }
-        submit.addEventListener("click", thirdResponse);
     }
 }
 
