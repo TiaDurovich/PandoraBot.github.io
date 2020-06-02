@@ -246,7 +246,6 @@ function forthResponse(){
             setTimeout(() => {botChat.innerHTML = "Do you want to know more? Yes or No?"}, 3000);;
             userInput.value = null;
         }
-        submit.addEventListener("click", fifthResponse);
     }
     while(botChat.textContent == "Do you want to know more? Type Yes or No?") {
         if(userInput.value == "Yes") {
