@@ -223,7 +223,12 @@ function response() {
             setTimeout(() => {botChat.innerHTML = "What hemisphere are you in? Northern or Southern?"}, 3000);;
             userInput.value = null;
         }
+        submit.addEventListener("click", forthResponse);
     }
+}
+
+
+function forthResponse(){
     while (botChat.textContent == "Do you want to know more? Yes or No?") {
         if(userInput.value == "Yes") { 
             botChat.textContent = "You will also be able to point out various constellations!"
