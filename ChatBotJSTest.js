@@ -108,7 +108,16 @@ const possibleNoValue = [
     'nay'
 ]
 
-
+const listOfPlanets = [
+    'Mercury',
+    'Venus',
+    'Earth',
+    'Mars',
+    'Jupiter',
+    'Saturn',
+    'Uranus',
+    'Neptune'
+]
 
 const question1 = welcomeQuestion[randomNumber];
 const question2 = welcomeResponse[randomNumber];
@@ -165,20 +174,9 @@ function response() {
 }
 }
 
-const listOfPlanets = [
-    'Mercury',
-    'Venus',
-    'Earth',
-    'Mars',
-    'Jupiter',
-    'Saturn',
-    'Uranus',
-    'Neptune'
-]
+
 
     function secondResponse(){
-        const randomNumber = Math.floor(Math.random() * (listOfPlanets.length));
-
     while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
         if (userInput.value == "Yes") {
             botChat.textContent = "Awesome! First of all I need to know your rough location"
@@ -317,6 +315,7 @@ const listOfPlanets = [
             setTimeout(() => {botChat.innerHTML = "Try typing " + listOfPlanets[randomNumber];}, 7000);;
             setTimeout(() => {botChat.innerHTML = "What planet in our solar system do you want to know about?"}, 10000);;
             userInput.value = null;
+            const randomNumber = Math.floor(Math.random() * (listOfPlanets.length));
         }
     }
     while (botChat.textContent == "Do you want to know about another planet? Yes or No?"){
