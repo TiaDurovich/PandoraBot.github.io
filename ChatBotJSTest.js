@@ -173,7 +173,7 @@ function response() {
 }
 }
 
-
+ 
     function secondResponse(){
     while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
         if (userInput.value == "Yes") {
