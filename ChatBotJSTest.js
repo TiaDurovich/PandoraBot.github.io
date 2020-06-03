@@ -108,16 +108,7 @@ const possibleNoValue = [
     'nay'
 ]
 
-const listOfPlanets = [
-    'Mercury',
-    'Venus',
-    'Earth',
-    'Mars',
-    'Jupiter',
-    'Saturn',
-    'Uranus',
-    'Neptune'
-]
+
 
 const question1 = welcomeQuestion[randomNumber];
 const question2 = welcomeResponse[randomNumber];
@@ -174,6 +165,16 @@ function response() {
 }
 }
 
+const listOfPlanets = [
+    'Mercury',
+    'Venus',
+    'Earth',
+    'Mars',
+    'Jupiter',
+    'Saturn',
+    'Uranus',
+    'Neptune'
+]
 
     function secondResponse(){
     while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
