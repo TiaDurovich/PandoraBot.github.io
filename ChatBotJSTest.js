@@ -1,3 +1,4 @@
+
 const userInput = document.querySelector("#userInput");
 const submit = document.querySelector("#submit");
 const botChat = document.querySelector("#botChat");
@@ -173,7 +174,7 @@ function response() {
 }
 }
 
- 
+
     function secondResponse(){
     while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
         if (userInput.value == "Yes") {
