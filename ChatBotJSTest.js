@@ -177,7 +177,7 @@ const listOfPlanets = [
 ]
 
     function secondResponse(){
-        const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
+        const randomNumber = Math.floor(Math.random() * (listOfPlanets.length));
 
     while(botChat.textContent == "Want to know about celestial bodies you can see in the night sky?") {
         if (userInput.value == "Yes") {
