@@ -324,7 +324,7 @@ function response() {
             userInput.value = null;
         }
         else if (userInput.value == "No"){
-            botChat.textContent = "Something"
+            botChat.textContent = "Thanks for using Pandora Bot!"
             userInput.value = null;
         }
         else {
