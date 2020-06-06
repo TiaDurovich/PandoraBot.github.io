@@ -320,12 +320,15 @@ function response() {
         }
     }
     while (botChat.textContent == "Do you want to know about another planet? Yes or No?"){
+        var string = "You can find out more about space at nasa.gov";
+        var result = string.link(url: "nasa.gov");
         if(userInput.value == "Yes"){
             botChat.textContent = "What planet in our solar system do you want to know about?"
             userInput.value = null;
         }
         else if (userInput.value == "No"){
             botChat.textContent = "Thanks for using Pandora Bot!"
+            setTimeout(() => {botChat.innerHTML = "You can find out more about space at nasa.gov"}, 3000);;
             userInput.value = null;
         }
         else {
