@@ -325,7 +325,7 @@ function response() {
             userInput.value = null;
         }
         else if (userInput.value == "No"){
-            botChat.textContent = "Thanks for using Pandora Bot!"
+            botChat.textContent = "Thanks for using Pandora Bot!";
             setTimeout(() => {botChat.innerHTML = "You can find out more about space at nasa.gov"}, 3000);;
             userInput.value = null;
         }
