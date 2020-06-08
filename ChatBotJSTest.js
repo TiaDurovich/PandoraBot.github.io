@@ -17,16 +17,12 @@ document.getElementById("userInput")
 
 /* Welcome Question on Load */
 
-const welcomeQuestion = [
-    'Welcome to Pandora Bot! What is your name?',
-    'Hello there! What is your name?',
-    'My name is Pandora Bot! What is yours?',
-    'Welcome human... what is your name?'
-]
+const welcomeQuestion = 'Welcome to Pandora Bot! What is your name?';
+    
 
 window.onload = function onload() {
     submit.addEventListener("click", response);
-    botChat.textContent = welcomeQuestion.length;
+    botChat.textContent = welcomeQuestion;
     alert("When talking to Pandora Bot, please answer the appropriate questions with either Yes or No");
 }
 
