@@ -27,8 +27,7 @@ const welcomeQuestion = [
 window.onload = function onload() {
     submit.addEventListener("click", response);
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
-    const question1 = welcomeQuestion[randomNumber];
-    botChat.textContent = question1;
+    botChat.textContent = welcomeQuestion[randomNumber];
     alert("When talking to Pandora Bot, please answer the appropriate questions with either Yes or No");
 }
 
@@ -135,11 +134,12 @@ const no = possibleNoValue.includes(userInput);
 /* ChatBot Welcome Question & Response */
 
 function response() {
+    const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
     
-    while(botChat.textContent == question1) {
+    while(botChat.textContent == welcomeQuestion[randomNumber]) {
         if (userInput.value == ""){
             botChat.textContent = "Please type your name below :)"
-            setTimeout(() => {botChat.innerHTML = question1}, 2500);;
+            setTimeout(() => {botChat.innerHTML = welcomeQuestion[randomNumber]}, 2500);;
         }
         else {
         botChat.textContent = userInput.value + "!";
