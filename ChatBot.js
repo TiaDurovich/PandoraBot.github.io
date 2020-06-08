@@ -1,3 +1,4 @@
+
 const userInput = document.querySelector("#userInput");
 const submit = document.querySelector("#submit");
 const botChat = document.querySelector("#botChat");
@@ -9,6 +10,7 @@ document.getElementById("userInput")
     event.preventDefault();
     if (event.keyCode === 13) {
         document.getElementById("submit").click();
+        event.preventDefault();
     }
 });
 
@@ -23,9 +25,9 @@ const welcomeQuestion = [
 ]
 
 window.onload = function onload() {
+    submit.addEventListener("click", response);
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
     botChat.textContent = welcomeQuestion[randomNumber];
-    submit.addEventListener("click", response);
     alert("When talking to Pandora Bot, please answer the appropriate questions with either Yes or No");
 }
 
@@ -129,12 +131,11 @@ const yes = possibleYesValue.includes(userInput);
 const no = possibleNoValue.includes(userInput);
 
 
-
 /* ChatBot Welcome Question & Response */
 
 function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
-
+    
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
         if (userInput.value == ""){
             botChat.textContent = "Please type your name below :)"
@@ -172,6 +173,7 @@ function response() {
         submit.addEventListener("click", secondResponse);
 }
 }
+
 
 
     function secondResponse(){
@@ -310,9 +312,10 @@ function response() {
         else {
             botChat.textContent = "That's not a planet silly!";
             setTimeout(() => {botChat.innerHTML = "Remember names begin with capital letters"}, 3000);;
-            setTimeout(() => {botChat.innerHTML = "Try typing " + listOfPlanets[randomNumber] + "..."}, 7000);;
+            setTimeout(() => {botChat.innerHTML = "Try typing " + listOfPlanets[randomNumber] + "...";}, 7000);;
             setTimeout(() => {botChat.innerHTML = "What planet in our solar system do you want to know about?"}, 10000);;
             userInput.value = null;
+            const randomNumber = Math.floor(Math.random() * (listOfPlanets.length));
         }
     }
     while (botChat.textContent == "Do you want to know about another planet? Yes or No?"){
@@ -321,12 +324,12 @@ function response() {
             userInput.value = null;
         }
         else if (userInput.value == "No"){
-            botChat.textContent = "Something"
+            botChat.textContent = "Thanks for using Pandora Bot!";
             userInput.value = null;
         }
         else {
             botChat.textContent = "Try typing Yes or No"
-            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet in our solar system? Yes or No?" }, 3000);;
+            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet in our solar system? Yes or No?"}, 3000);;
             userInput.value = null;
         }
     }
