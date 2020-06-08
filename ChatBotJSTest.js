@@ -5,12 +5,11 @@ const botChat = document.querySelector("#botChat");
 const user = document.querySelector("#user");
 
 
-document.getElementById("userInput")
-    .addEventListener("keyup", function(event) {
-    event.preventDefault();
+
+    userInput.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
-        document.getElementById("submit").click();
         event.preventDefault();
+        document.getElementById("submit").click();
     }
 });
 
