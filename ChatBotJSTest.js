@@ -123,7 +123,7 @@ const no = possibleNoValue.includes(userInput);
 /* ChatBot Welcome Question & Response */
 
 function response() {
-    const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
+    const randomNumber = Math.floor(Math.random() * (didYouKnowResponseYes.length));
     
     while(botChat.textContent == welcomeQuestion) {
         if (userInput.value == ""){
