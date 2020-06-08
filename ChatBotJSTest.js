@@ -136,7 +136,6 @@ const no = possibleNoValue.includes(userInput);
 function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
     
-    while(botChat.textContent == welcomeQuestion.length) {
         if (userInput.value == ""){
             botChat.textContent = "Please type your name below :)"
             setTimeout(() => {botChat.innerHTML = welcomeQuestion[randomNumber]}, 2500);;
@@ -147,7 +146,6 @@ function response() {
         setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]}, 2000);;
         userInput.value = null;
         }
-    }
 
     while(botChat.textContent == welcomeResponse[randomNumber]) {
         if (userInput.value == "Yes") {
