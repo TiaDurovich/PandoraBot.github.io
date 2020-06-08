@@ -138,19 +138,32 @@ function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
-        if (userInput.value == ""){
-            botChat.textContent = "Please type your name below :)"
-            setTimeout(() => {botChat.innerHTML = welcomeQuestion[randomNumber]}, 2500);;
-        }
-        else {
-        botChat.textContent = userInput.value + "!";
-        userInput.textContent = userInput.value;
-        setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]}, 2000);;
-        userInput.value = null;
-        }
+        submit.addEventListener("click", userName);
+    }
+}
+
+
+
+function userName(){
+    if (userInput.value == ""){
+        botChat.textContent = "Please type your name below :)"
+        setTimeout(() => {botChat.innerHTML = welcomeQuestion[randomNumber]}, 2500);;
+    }
+    else {
+    botChat.textContent = userInput.value + "!";
+    userInput.textContent = userInput.value;
+    setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]}, 2000);;
+    userInput.value = null;
     }
 
     while(botChat.textContent == welcomeResponse[randomNumber]) {
+        submit.addEventListener("click", userResponse);
+}
+
+
+
+    function userResponse(){
+
         if (userInput.value == "Yes") {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
             userInput.value = null;
@@ -173,7 +186,9 @@ function response() {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
         submit.addEventListener("click", secondResponse);
 }
-}
+    }
+
+
 
 
 
