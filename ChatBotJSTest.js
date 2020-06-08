@@ -159,6 +159,7 @@ function userName(){
     while(botChat.textContent == welcomeResponse[randomNumber]) {
         submit.addEventListener("click", userResponse);
 }
+}
 
 
 
