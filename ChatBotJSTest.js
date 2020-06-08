@@ -138,7 +138,16 @@ function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
-        submit.addEventListener("click", userName);
+        if (userInput.value == ""){
+            botChat.textContent = "Please type your name below :)"
+            setTimeout(() => {botChat.innerHTML = welcomeQuestion[randomNumber]}, 2500);;
+        }
+        else {
+        botChat.textContent = userInput.value + "!";
+        userInput.textContent = userInput.value;
+        setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]}, 2000);;
+        userInput.value = null;
+        }
     }
 
     while(botChat.textContent == welcomeResponse[randomNumber]) {
@@ -166,18 +175,6 @@ function response() {
 }
 }
 
-function userName(){
-    if (userInput.value == ""){
-        botChat.textContent = "Please type your name below :)"
-        setTimeout(() => {botChat.innerHTML = welcomeQuestion[randomNumber]}, 2500);;
-    }
-    else {
-    botChat.textContent = userInput.value + "!";
-    userInput.textContent = userInput.value;
-    setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]}, 2000);;
-    userInput.value = null;
-    }
-}
 
 
     function secondResponse(){
