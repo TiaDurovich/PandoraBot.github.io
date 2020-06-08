@@ -134,17 +134,17 @@ function response() {
     while(botChat.textContent == welcomeQuestion) {
         if (userInput.value == ""){
             botChat.textContent = "Please type your name below :)"
-            setTimeout(() => {botChat.innerHTML = welcomeQuestion[randomNumber]}, 2500);;
+            setTimeout(() => {botChat.innerHTML = welcomeQuestion}, 2500);;
         }
         else {
         botChat.textContent = userInput.value + "!";
         userInput.textContent = userInput.value;
-        setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]}, 2000);;
+        setTimeout(() => {botChat.innerHTML = welcomeResponse}, 2000);;
         userInput.value = null;
         }
     }
 
-    while(botChat.textContent == welcomeResponse[randomNumber]) {
+    while(botChat.textContent == welcomeResponse) {
         if (userInput.value == "Yes") {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
             userInput.value = null;
