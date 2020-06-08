@@ -5,11 +5,12 @@ const botChat = document.querySelector("#botChat");
 const user = document.querySelector("#user");
 
 
-
-    userInput.addEventListener("keyup", function(event) {
+document.getElementById("userInput")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
     if (event.keyCode === 13) {
-        event.preventDefault();
         document.getElementById("submit").click();
+        event.preventDefault();
     }
 });
 
@@ -135,6 +136,7 @@ const no = possibleNoValue.includes(userInput);
 
 function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
+    event.preventDefault();
 
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
         if (userInput.value == ""){
