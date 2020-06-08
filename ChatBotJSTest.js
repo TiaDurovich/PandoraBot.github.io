@@ -129,13 +129,12 @@ const yes = possibleYesValue.includes(userInput);
 const no = possibleNoValue.includes(userInput);
 
 
-
 /* ChatBot Welcome Question & Response */
 
 function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
     
-    while(botChat.textContent == welcomeQuestion[randomNumber]) {
+    while(botChat.textContent == question1) {
         if (userInput.value == ""){
             botChat.textContent = "Please type your name below :)"
             setTimeout(() => {botChat.innerHTML = welcomeQuestion[randomNumber]}, 2500);;
