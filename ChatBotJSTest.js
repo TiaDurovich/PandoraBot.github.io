@@ -29,7 +29,7 @@ window.onload = function onload() {
     alert("When talking to Pandora Bot, please answer the appropriate questions with either Yes or No");
 }
 
-window.onload function randomOnloadQuestion() {
+window.onload function randomOnloadQuestion() ;
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
     botChat.textContent = welcomeQuestion[randomNumber];
 }
