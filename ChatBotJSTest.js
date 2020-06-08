@@ -127,7 +127,7 @@ const question2 = welcomeResponse[randomNumber];
 const yes = possibleYesValue.includes(userInput);
 const no = possibleNoValue.includes(userInput);
 
-submit.addEventListener("click", response);
+submit.addEventListener("click", response)
 
 
 /* ChatBot Welcome Question & Response */
