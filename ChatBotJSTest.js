@@ -124,8 +124,6 @@ const question1 = welcomeQuestion[randomNumber];
 const question2 = welcomeResponse[randomNumber];
 
 
-const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
-
 
 const yes = possibleYesValue.includes(userInput);
 const no = possibleNoValue.includes(userInput);
@@ -135,6 +133,8 @@ const no = possibleNoValue.includes(userInput);
 /* ChatBot Welcome Question & Response */
 
 function response() {
+    const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
+
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
         if (userInput.value == ""){
             botChat.textContent = "Please type your name below :)"
