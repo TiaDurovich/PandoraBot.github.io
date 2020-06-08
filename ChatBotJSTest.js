@@ -135,6 +135,7 @@ const no = possibleNoValue.includes(userInput);
 
 function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
+    const question1 = welcomeQuestion[randomNumber];
     
     while(botChat.textContent == question1) {
         if (userInput.value == ""){
