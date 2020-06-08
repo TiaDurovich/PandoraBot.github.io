@@ -151,8 +151,7 @@ function response() {
 
 
 function nextQuestion(){
-    while(botChat.textContent == welcomeResponse[randomNumber]) {
-        const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
+    const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
         if (userInput.value == "Yes") {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
@@ -167,7 +166,7 @@ function nextQuestion(){
             setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] }, 2000);;
             userInput.value = null;
         }
-    }
+    
     if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
         submit.addEventListener("click", secondResponse);
