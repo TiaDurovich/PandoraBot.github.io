@@ -25,9 +25,11 @@ const welcomeQuestion = [
 ]
 
 window.onload = function onload() {
+    const question1 = welcomeQuestion[randomNumber];
+
     submit.addEventListener("click", response);
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
-    botChat.textContent = welcomeQuestion[randomNumber];
+    botChat.textContent = question1;
     alert("When talking to Pandora Bot, please answer the appropriate questions with either Yes or No");
 }
 
