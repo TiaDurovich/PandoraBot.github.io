@@ -177,16 +177,15 @@ function userName(){
             setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] }, 2000);;
             userInput.value = null;
         }
-    }
     if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
         submit.addEventListener("click", secondResponse);
-}
+    }
     if (botChat.textContent == didYouKnowResponseNo[randomNumber]) {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
         submit.addEventListener("click", secondResponse);
-}
     }
+}
 
 
 
