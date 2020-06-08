@@ -143,10 +143,14 @@ function response() {
         else {
         botChat.textContent = userInput.value + "!";
         userInput.textContent = userInput.value;
-        setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]}, 2000);;
+        setTimeout(function(){ nextQuestion(); }, 2000);
         userInput.value = null;
         }
+    }
 
+
+
+function nextQuestion(){
     while(botChat.textContent == welcomeResponse[randomNumber]) {
         const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
