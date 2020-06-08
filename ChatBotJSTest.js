@@ -141,10 +141,12 @@ function response() {
     while(botChat.textContent == welcomeResponse) {
         if (userInput.value == "Yes") {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
+            setTimeout(() => {botChat.innerHTML = "Do you want to know another fact?"}, 3000);;
             userInput.value = null;
         }
         else if (userInput.value == "No") {
             botChat.textContent = didYouKnowResponseNo[randomNumber];
+            setTimeout(() => {botChat.innerHTML = "Do you want to know another fact?"}, 3000);;
             userInput.value = null;
         }
         else {
