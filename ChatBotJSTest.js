@@ -26,8 +26,7 @@ const welcomeQuestion = [
 
 window.onload = function onload() {
     submit.addEventListener("click", response);
-    const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
-    botChat.textContent = welcomeQuestion[randomNumber];
+    botChat.textContent = question1;
     alert("When talking to Pandora Bot, please answer the appropriate questions with either Yes or No");
 }
 
@@ -123,6 +122,8 @@ const listOfPlanets = [
 const question1 = welcomeQuestion[randomNumber];
 const question2 = welcomeResponse[randomNumber];
 
+
+const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
 
 const yes = possibleYesValue.includes(userInput);
