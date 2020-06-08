@@ -136,7 +136,15 @@ const no = possibleNoValue.includes(userInput);
 
 function response() {
     const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
+
+    document.getElementById("userInput")
+    .addEventListener("keyup", function(event) {
     event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("submit").click();
+        event.preventDefault();
+    }
+});
 
     while(botChat.textContent == welcomeQuestion[randomNumber]) {
         if (userInput.value == ""){
