@@ -148,7 +148,7 @@ function response() {
         }
     }
 
-    while(botChat.textContent == welcomeResponse[randomNumber]) {
+    while(botChat.textContent == welcomeResponse[randomNumber]); {
         if (userInput.value == "Yes") {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
             userInput.value = null;
@@ -159,15 +159,15 @@ function response() {
         }
         else {
             botChat.textContent = "Try typing Yes or No";
-            setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] }, 2000);;
+            setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber]; }, 2000);;
             userInput.value = null;
         }
     }
-    if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
+    if (botChat.textContent == didYouKnowResponseYes[randomNumber];) {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
         submit.addEventListener("click", secondResponse);
 }
-    if (botChat.textContent == didYouKnowResponseNo[randomNumber]) {
+    if (botChat.textContent == didYouKnowResponseNo[randomNumber];) {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
         submit.addEventListener("click", secondResponse);
 }
