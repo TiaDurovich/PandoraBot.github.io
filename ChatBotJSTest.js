@@ -146,7 +146,6 @@ function response() {
         }
         else if (userInput.value == "No") {
             botChat.textContent = didYouKnowResponseNo[randomNumber];
-            setTimeout(() => {botChat.innerHTML = "Do you want to know another fact?"}, 3000);;
             userInput.value = null;
         }
         else {
