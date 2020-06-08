@@ -143,7 +143,7 @@ function response() {
         else {
         botChat.textContent = userInput.value + "!";
         userInput.textContent = userInput.value;
-        setTimeout(function(){ nextQuestion(); }, 2000);
+        setTimeout(function(){ nextQuestion() }, 2000);
         userInput.value = null;
         }
     }
