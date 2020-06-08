@@ -27,15 +27,9 @@ window.onload = function onload() {
 }
 
 
-const welcomeResponse = [
-    'Did you know that there may be life on Mars!?',
-    'A full NASA space suit costs 12  million dollars! Did you know that?',
-    'Did you know that Halleys Comet will orbit past Earth again in the year 2061?',
-    'The hottest planet in our solar system is Venus! Were you familiar with this?',
-    'Our solar system in roughly 4 billion years old! Did you know this?',
-    'Did you know that Pluto is smaller than the United States?',
-    'Did you know that space is silent?'
-]
+const welcomeResponse = 'A full NASA space suit costs 12  million dollars! Did you know that?';
+    
+
 
 
 const didYouKnowResponseYes = [
