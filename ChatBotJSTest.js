@@ -27,9 +27,15 @@ window.onload = function onload() {
 }
 
 
-const welcomeResponse = 'A full NASA space suit costs 12  million dollars! Did you know that?';
-    
-
+const welcomeResponse = [
+    'Did you know that there may be life on Mars!?',
+    'A full NASA space suit costs 12  million dollars! Did you know that?',
+    'Did you know that Halleys Comet will orbit past Earth again in the year 2061?',
+    'The hottest planet in our solar system is Venus! Were you familiar with this?',
+    'Our solar system in roughly 4 billion years old! Did you know this?',
+    'Did you know that Pluto is smaller than the United States?',
+    'Did you know that space is silent?'
+]
 
 
 const didYouKnowResponseYes = [
@@ -124,6 +130,8 @@ const no = possibleNoValue.includes(userInput);
 
 function response() {
     const randomNumber = Math.floor(Math.random() * (didYouKnowResponseYes.length));
+    const randomNumber2 = Math.floor(Math.random() * (didYouKnowResponseNo.length));
+
     
     while(botChat.textContent == welcomeQuestion) {
         if (userInput.value == ""){
@@ -141,22 +149,23 @@ function response() {
     while(botChat.textContent == welcomeResponse) {
         if (userInput.value == "Yes") {
             botChat.textContent = didYouKnowResponseYes[randomNumber];
-             userInput.value = null;
+            userInput.value = null;
         }
         else if (userInput.value == "No") {
-            botChat.textContent = didYouKnowResponseNo[randomNumber];
+            botChat.textContent = didYouKnowResponseNo[randomNumber2];
             userInput.value = null;
         }
         else {
             botChat.textContent = "Try typing Yes or No";
-            setTimeout(() => {botChat.innerHTML = welcomeResponse[randomNumber] }, 2000);;
+            setTimeout(() => {botChat.innerHTML = welcomeResponse}, 2000);;
             userInput.value = null;
         }
+    }
     if (botChat.textContent == didYouKnowResponseYes[randomNumber]) {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
         submit.addEventListener("click", secondResponse);
 }
-    if (botChat.textContent == didYouKnowResponseNo[randomNumber]) {
+    if (botChat.textContent == didYouKnowResponseNo[randomNumber2]) {
         setTimeout(() => {botChat.textContent = "Want to know about celestial bodies you can see in the night sky?"}, 3000)
         submit.addEventListener("click", secondResponse);
 }
