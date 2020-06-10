@@ -143,7 +143,8 @@ function response() {
         if(userInput.value == "Yes") { 
             botChat.textContent = "You will also be able to point out various constellations!"
             setTimeout(() => {botChat.textContent = "Lyra, Draco, Gemini and Taurus are just a few!"}, 4000)
-            setTimeout(() => {botChat.textContent = "What planet in our solar system do you want to know about?"}, 9000)
+            setTimeout(() => {botChat.textContent = "Let's talk about planets!"}, 9000)
+            setTimeout(() => {botChat.textContent = "What planet in our solar system do you want to know about?"}, 12000)
             userInput.value = null;
         }
         else if(userInput.value == "No") {
@@ -160,7 +161,8 @@ function response() {
         if(userInput.value == "Yes") {
             botChat.textContent = "You will also be able to see the Southern Cross!"
             setTimeout(() => {botChat.textContent = "Sailors often use it as a compass in the night sky"}, 4000)
-            setTimeout(() => {botChat.textContent = "What planet in our solar system do you want to know about?"}, 8500)
+            setTimeout(() => {botChat.textContent = "Let's talk about planets!"}, 8500)
+            setTimeout(() => {botChat.textContent = "What planet in our solar system do you want to know about?"}, 11000)
             userInput.value = null;
         }
         else if(userInput.value == "No") {
