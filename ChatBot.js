@@ -294,7 +294,7 @@ function response() {
         }
         else if(userInput.value == "Pluto") {
             botChat.textContent = "Pluto hasn't been calssfied as a planet since 2006!"
-            setTimeout(() => {botChat.innerHTML = "What planet do you want to know about?"}, 4000);;
+            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 4000);;
             userInput.value = null;
         }
         else {
