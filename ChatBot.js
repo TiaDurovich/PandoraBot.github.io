@@ -186,15 +186,15 @@ function response() {
         }
         else if(userInput.value == "Venus") {
             botChat.textContent = "Venus and Earth are very similar in size"
-            setTimeout(() => {botChat.innerHTML = "Also, Venus rotates the Sun in the opposite direction to Earth!"}, 3000);;
-            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 8500);;
+            setTimeout(() => {botChat.innerHTML = "Also, Venus rotates the Sun in the opposite direction to Earth!"}, 4000);;
+            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 9500);;
             userInput.value = null;
         }
         else if(userInput.value == "Earth") {
             botChat.textContent = "Earth is where we are right now!"
-            setTimeout(() => {botChat.innerHTML = "It is the densest planet in our solar system, and its rotation is slowing!"}, 3000);;
-            setTimeout(() => {botChat.innerHTML = "That means, in 140 million years one day on Earth will be 25 hours long!"}, 8000);;
-            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 14000);;
+            setTimeout(() => {botChat.innerHTML = "It is the densest planet in our solar system, and its rotation is slowing!"}, 4000);;
+            setTimeout(() => {botChat.innerHTML = "That means, in 140 million years one day on Earth will be 25 hours long!"}, 9000);;
+            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 15000);;
             userInput.value = null;
         }
         else if(userInput.value == "Mars") {
@@ -205,8 +205,8 @@ function response() {
         }
         else if(userInput.value == "Jupiter") {
             botChat.textContent = "Jupiter is 2.5 times more massive than all the other planets in our solar system!"
-            setTimeout(() => {botChat.innerHTML = "It's magnetic field is also 14 times stronger than Earths!"}, 4000);;
-            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 8500);;
+            setTimeout(() => {botChat.innerHTML = "It's magnetic field is also 14 times stronger than Earths!"}, 5000);;
+            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 9500);;
             userInput.value = null;
         }
         else if(userInput.value == "Saturn") {
@@ -217,19 +217,20 @@ function response() {
         }
         else if(userInput.value == "Uranus") {
             botChat.textContent = "It takes Uranus 84 Earth years to travel once around the sun!"
-            setTimeout(() => {botChat.innerHTML = "It is the coldest of all the planets in out solar system, reaching to -224 degrees C"}, 4000);;
-            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 8500);;
+            setTimeout(() => {botChat.innerHTML = "It is the coldest of all the planets in out solar system, reaching to -224 degrees C"}, 4500);;
+            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 9000);;
             userInput.value = null;
         }
         else if(userInput.value == "Neptune") {
             botChat.textContent = "Neptune is named after Roman the god of the sea"
             setTimeout(() => {botChat.innerHTML = "Only one spacecraft has ever flown by Neptune. It happened over 30 years ago!"}, 4000);;
-            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 8500);;
+            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 9000);;
             userInput.value = null;
         }
         else if(userInput.value == "Pluto") {
             botChat.textContent = "Pluto hasn't been calssfied as a planet since 2006!"
-            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 4000);;
+            setTimeout(() => {botChat.innerHTML = "Due to its size, Pluto is classed as a dwarf planet instead"}, 4000);;
+            setTimeout(() => {botChat.innerHTML = "Do you want to know about another planet? Yes or No?"}, 9000);;
             userInput.value = null;
         }
         else {
