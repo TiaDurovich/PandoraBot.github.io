@@ -50,72 +50,7 @@ const didYouKnowResponseNo = [
 ]
 
 
-const possibleYesValue = [
-    'Yes',
-    'yes',
-    'Yeah',
-    'yeah',
-    'Y',
-    'y',
-    'Ya',
-    'ya',
-    'Yes I did',
-    'yes i did',
-    'Yup',
-    'yup',
-    'Yo',
-    'yo',
-    'Sure did',
-    'sure did',
-    'Yas',
-    'yas',
-    'Yep',
-    'yep',
-    'Yaa',
-    'yaa',
-    'You bet',
-    'you bet',
-    'Yeh',
-    'yeh'
-]
-
-const possibleNoValue = [
-    'No',
-    'no',
-    'N',
-    'n',
-    'Nope',
-    'nope',
-    'Nah',
-    'nah',
-    'No i did not',
-    'no i did not',
-    'No I didn\'t',
-    'no i didn\'t',
-    'Nay',
-    'nay'
-]
-
-const listOfPlanets = [
-    'Mercury',
-    'Venus',
-    'Earth',
-    'Mars',
-    'Jupiter',
-    'Saturn',
-    'Uranus',
-    'Neptune'
-]
-
-const question1 = welcomeQuestion[randomNumber];
-const question2 = welcomeResponse[randomNumber];
-
-
 const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
-
-
-const yes = possibleYesValue.includes(userInput);
-const no = possibleNoValue.includes(userInput);
 
 
 /* ChatBot Welcome Question & Response */
