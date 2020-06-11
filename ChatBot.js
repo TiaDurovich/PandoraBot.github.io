@@ -238,10 +238,10 @@ function response() {
         else {
             botChat.textContent = "That's not a planet silly!";
             setTimeout(() => {botChat.innerHTML = "Remember names begin with capital letters"}, 3000);;
-            setTimeout(() => {botChat.innerHTML = "Try typing " + listOfPlanets[randomNumber] + "...";}, 7000);;
+            setTimeout(() => {botChat.innerHTML = "Try typing " + listOfPlanets[randomNumber3] + "...";}, 7000);;
             setTimeout(() => {botChat.innerHTML = "What planet in our solar system do you want to know about?"}, 10000);;
             userInput.value = null;
-            const randomNumber = Math.floor(Math.random() * (listOfPlanets.length));
+            const randomNumber3 = Math.floor(Math.random() * (listOfPlanets.length));
         }
     }
     while (botChat.textContent == "Do you want to know about another planet? Yes or No?"){
