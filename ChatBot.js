@@ -23,7 +23,7 @@ const welcomeQuestion = 'Welcome to Pandora Bot! What is your name?';
 window.onload = function onload() {
     submit.addEventListener("click", response);
     botChat.textContent = welcomeQuestion;
-    alert("When talking to Pandora Bot, please answer the appropriate questions with either Yes or No");
+    alert("When talking to Pandora Bot, please answer the appropriate questions with either Yes or No. Pandora Bot is case sensitive!");
 }
 
 
