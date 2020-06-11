@@ -49,6 +49,16 @@ const didYouKnowResponseNo = [
     'That\'s alright! You can\'t know everthing :)'
 ]
 
+const listOfPlanets = [
+    'Mercury',
+    'Venus',
+    'Earth',
+    'Mars',
+    'Jupiter',
+    'Saturn',
+    'Uranus',
+    'Neptune'
+]
 
 const randomNumber = Math.floor(Math.random() * (welcomeQuestion.length));
 
